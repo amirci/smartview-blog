@@ -1,0 +1,29 @@
+# Site settings
+title: SmartView
+email:
+description: The Smartest tool for lean project management
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://blog.smartviewapp.com" # the base hostname & protocol for your site
+twitter_username:
+github_username:
+
+# Build settings
+markdown: rdiscount
+
+
+gems:      ['octopress-image-tag']
+
+# ----------------------- #
+#    Jekyll & Plugins     #
+# ----------------------- #
+
+category_dir: categories
+rdiscount:
+  extensions:
+    - autolink
+    - footnotes
+    - smart
+
+paginate: 4         # Posts per page on the blog index
+recent_posts: 5       # Posts in the sidebar Recent Posts section
+titlecase: true       # Converts page and post titles to titlecase
