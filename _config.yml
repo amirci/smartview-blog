@@ -27,3 +27,5 @@ rdiscount:
 paginate: 4         # Posts per page on the blog index
 recent_posts: 5       # Posts in the sidebar Recent Posts section
 titlecase: true       # Converts page and post titles to titlecase
+
+destination: public
