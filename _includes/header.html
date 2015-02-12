@@ -1,0 +1,24 @@
+<header class="site-header">
+  <div class="wrapper">
+
+    <nav class="site-nav">
+      <div class="logo">
+        <a class="site-title" href="{{ site.baseurl }}/">
+          <img src="{{ site.baseurl }}/images/logo_smartview.png" alt="{{ site.title }}" class="logo-smartview" />
+          <span class="beta">beta</span>
+        </a>
+      </div>
+
+      <div class="trigger pages">
+        <ul class="nav navbar-nav">
+          {% for page in site.pages %}
+            {% if page.title %}
+              <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </nav>
+
+  </div>
+</header>

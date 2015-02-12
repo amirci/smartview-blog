@@ -1,0 +1,129 @@
+$nav-bar-background-color: #404855;
+$nav-height: 70px;
+$nav-padding: 30px;
+$footer-height: 20px;
+$footer-padding: 10px;
+$smartview-orange: #ee3600;
+$page-padding: 30px;
+
+
+.site-header {
+  background-color: $nav-bar-background-color;
+  border: none;
+  font-size: 14px;
+
+  a {
+    text-decoration: none;
+    line-height: $nav-height;
+    color: #ffffff;
+  }
+
+  .site-nav {
+    float: none;
+    height: $nav-height;
+  }
+
+  .logo {
+    float: left;
+    a, a:hover, a:visited, a:link, a:active {text-decoration: none; }
+
+    .logo-smartview {
+      height: 40px;
+    }
+
+    .site-title {
+      margin: 0;
+      font-size: 24px;
+      padding: 10px 20px 0 10px;
+      line-height: 40px;
+      text-shadow: 0px 2px 15px #222;
+      letter-spacing: -1.5px;
+      float: left;
+      position: relative;
+      color: #ffffff;
+
+      &:hover {
+        color: $smartview-orange;
+      }
+    }
+
+    .beta {
+      font-size: 0.55em;
+      font-style: italic;
+      position: absolute;
+      right: 4px;
+      bottom: -14px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+  }
+
+  .pages {
+    padding-top: 5px;
+
+    ul {
+      list-style: none;
+    }
+
+    .page-link {
+      padding: 0 15px;
+      color: #ffffff;
+
+      &:hover {
+        color: $smartview-orange;
+      }
+    }
+  }
+}
+
+html, body { height: 100% }
+.page-content {
+  background: #d1d1d1;
+  color: #404855;
+  font-size: 14px;
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  height: auto;
+  min-height: 100%;
+  min-height: -webkit-calc(100% - #{$nav-height} - #{$page-padding}*2);
+  min-height: calc(100% - #{$nav-height} - #{$page-padding}*2);
+
+  h1 {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  a {
+    color: #000000;
+    text-decoration: none;
+    &:hover {
+      color: $smartview-orange;
+    }
+  }
+
+  .wrapper {
+    padding-bottom: $footer-height;
+  }
+}
+
+.site-footer {
+  background: #e93500;
+  color: white;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  padding: $footer-padding 0px;
+  border: 0px;
+
+  position: relative;
+  clear: both;
+  z-index: 10;
+  height: $footer-height;
+  margin-top: -$footer-height - $footer-padding*2;
+
+  .content {
+    text-align: center;
+  }
+}

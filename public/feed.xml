@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SmartView</title>
+    <description>The Smartest tool for lean project management</description>
+    <link>http://blog.smartviewapp.com/</link>
+    <atom:link href="http://blog.smartviewapp.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 12 Feb 2015 14:59:18 -0300</pubDate>
+    <lastBuildDate>Thu, 12 Feb 2015 14:59:18 -0300</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Using SmartView - Part III</title>
+        <description>&lt;p&gt;In my last two posts we discussed the basics of &lt;a href=&quot;http://smartviewapp.com&quot;&gt;SmartView&lt;/a&gt; and how to start &lt;a href=&quot;/agile/management/alm/smartview/2014/07/03/using-smartview-part-i.html&quot;&gt;using the Story Map&lt;/a&gt; and &lt;a href=&quot;/agile/management/alm/smartview/2014/07/04/using-smartview-part-ii.html&quot;&gt;creating releases&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;With the releases in place it is time to start working on the &lt;em&gt;Backlog&lt;/em&gt; and the &lt;em&gt;Kanban Board&lt;/em&gt; to view and manage our workflow.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+
+&lt;h2&gt;Populating the &lt;em&gt;Backlog&lt;/em&gt;&lt;/h2&gt;
+
+&lt;p&gt;Now that we have the stories assigned to releases it is time to start working on them. To do so we need to assign stories to the &lt;em&gt;Backlog&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;The &lt;em&gt;Backlog&lt;/em&gt; is the entrance port to the &lt;em&gt;Kanban Board&lt;/em&gt; and contains the stories that have been chosen to start working on immediately.&lt;/p&gt;
+
+&lt;p&gt;To move a &lt;em&gt;User Story&lt;/em&gt; to the &lt;em&gt;Backlog&lt;/em&gt; you can open the &lt;em&gt;Backlog&lt;/em&gt; and drag and drop the story into it, or using the story menu you can click on the &lt;i class=&#39;fa fa-inbox&#39;&gt;&lt;/i&gt; icon to send it directly.&lt;/p&gt;
+
+&lt;p&gt;Here we see the &lt;em&gt;Backlog&lt;/em&gt; with two of the stories already assigned:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/sv_p3/sending_to_backlog.png&quot;  &gt;&lt;/p&gt;
+
+&lt;h3&gt;&lt;em&gt;Kanban&lt;/em&gt; workflow&lt;/h3&gt;
+
+&lt;p&gt;The &lt;em&gt;Kanban Board&lt;/em&gt; helps us model the workflow you and your team use to visualize the status and progress of the current stories.&lt;/p&gt;
+
+&lt;p&gt;The first step is to make sure the board reflects the workflow your team uses for software development. Once we model reality then we can focus on how to improve it.&lt;/p&gt;
+
+&lt;p&gt;The &lt;em&gt;Kanban Board&lt;/em&gt; comes with three phases by default: Ready, Working and Review.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/sv_p3/default_kanban.png&quot;  &gt;&lt;/p&gt;
+
+&lt;p&gt;In order to customize your &lt;em&gt;Kanban Board&lt;/em&gt;, from the menu &lt;span class=&quot;fa-stack&quot;&gt;&lt;i class=&quot;fa fa-square fa-stack-2x&quot;&gt;&lt;/i&gt;&lt;i class=&quot;fa fa-th fa-inverse fa-stack-1x&quot;&gt;&lt;/i&gt;&lt;/span&gt; access Settings &lt;i class=&#39;fa fa-wrench&#39;&gt;&lt;/i&gt; and choose Process &lt;i class=&#39;fa fa-file-text&#39;&gt;&lt;/i&gt; to access the &lt;em&gt;Kanban Board&lt;/em&gt; workflow.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/sv_p3/kanban_default_phases.png&quot;  &gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Backlog&lt;/em&gt; represents the input queue of the stories to start working on and cannot be modified.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Done&lt;/em&gt; represents the phase of stories that are completed (completely done, deployed, etc.) and cannot be modified.&lt;/p&gt;
+
+&lt;p&gt;All the other phases can be removed, renamed, etc. For this example, I am going to use the workflow that my team uses: Analysis, Working, Review and Deploy.&lt;/p&gt;
+
+&lt;p&gt;The final workflow looks like this (I will ignore WIP limits and capacity for now—we will discuss them in the next post in this series):&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/sv_p3/kanban_workflow.png&quot;  &gt;&lt;/p&gt;
+
+&lt;h3&gt;Using the board&lt;/h3&gt;
+
+&lt;p&gt;With the new phases in place using the &lt;em&gt;Kanban Board&lt;/em&gt; is just a matter of moving the stories between phases (by dragging and dropping) to show that the story is being worked on and is closer to being completed (or, in our case, &lt;em&gt;deployed&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;Here we see one story left in the &lt;em&gt;Backlog&lt;/em&gt;, one in &lt;em&gt;Analysis&lt;/em&gt; and one in &lt;em&gt;Working&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/sv_p3/on_the_board.png&quot;  &gt;&lt;/p&gt;
+
+&lt;h3&gt;Assigning work&lt;/h3&gt;
+
+&lt;p&gt;All the team members are listed on the &lt;em&gt;Kanban Board&lt;/em&gt;. You can see the default people icon &lt;i class=&#39;fa fa-user&#39;&gt;&lt;/i&gt; with a random colour or the picture of the teammate if he chooses to change his profile picture. I do recommend changing profile pictures as soon as possible since it is much easier to identify members of the team with pictures than with just a generic icon.&lt;/p&gt;
+
+&lt;p&gt;To assign a story to a team member we can drag and drop the team member into the story. The member will appear assigned to the story in the top right corner.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/sv_p3/assigning_resources.png&quot;  &gt;&lt;/p&gt;
+
+&lt;h3&gt;Following the progress&lt;/h3&gt;
+
+&lt;p&gt;When a &lt;em&gt;User Story&lt;/em&gt; is changed from one phase to another the status is reflected in the &lt;em&gt;Story Map&lt;/em&gt; as well, so it is easy to identify which stories are being worked on and what the progress is.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/sv_p3/sm_story_progress.png&quot;  &gt;&lt;/p&gt;
+
+&lt;p&gt;The stories that are assigned to the &lt;em&gt;Backlog&lt;/em&gt; will show the &lt;em&gt;Backlog&lt;/em&gt; &lt;i class=&#39;fa fa-inbox backlog&#39;&gt;&lt;/i&gt; icon.&lt;/p&gt;
+
+&lt;p&gt;The stories that are being worked on show a series of small squares
+&lt;span class=&#39;progress&#39;&gt;
+  &lt;i class=&#39;fa fa-square&#39;&gt;&lt;/i&gt;
+  &lt;i class=&#39;fa fa-square&#39;&gt;&lt;/i&gt;
+  &lt;i class=&#39;fa fa-square&#39;&gt;&lt;/i&gt;
+  &lt;i class=&#39;fa fa-square&#39;&gt;&lt;/i&gt;
+&lt;/span&gt;
+that represent the phases of the &lt;em&gt;Kanban Board&lt;/em&gt; (other than &lt;em&gt;Done&lt;/em&gt; and &lt;em&gt;Backlog&lt;/em&gt;). For each complete phase a green square &lt;i class=&#39;fa fa-square green&#39;&gt;&lt;/i&gt; is shown.&lt;/p&gt;
+
+&lt;p&gt;The stories that are completed (done) show a green check mark &lt;i class=&#39;fa fa-check-circle green&#39;&gt;&lt;/i&gt;.&lt;/p&gt;
+
+&lt;h3&gt;What&amp;rsquo;s next?&lt;/h3&gt;
+
+&lt;p&gt;In the next post in the series we will explore how to define the WIP (work in progress) for the board, discuss capacity and take a look at metrics.&lt;/p&gt;
+
+&lt;p&gt;In the meantime feel free to take advantage of the interactive guides that come with &lt;em&gt;SmartView&lt;/em&gt; to learn, in a series of steps, all the other functionalities that the application has to offer.&lt;/p&gt;
+
+&lt;p&gt;To access the &lt;em&gt;Guides&lt;/em&gt; just move your mouse to the bottom left corner and click the &lt;i class=&#39;fa fa-book&#39;&gt;&lt;/i&gt; icon inside the orange speech bubble.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/sv_p1/guides.png&quot;  &gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 05 Jul 2014 14:09:56 -0300</pubDate>
+        <link>http://blog.smartviewapp.com/agile/management/alm/smartview/2014/07/05/using-smartview-part-iii.html</link>
+        <guid isPermaLink="true">http://blog.smartviewapp.com/agile/management/alm/smartview/2014/07/05/using-smartview-part-iii.html</guid>
+        
+        
+        <category>agile</category>
+        
+        <category>management</category>
+        
+        <category>alm</category>
+        
+        <category>smartview</category>
+        
+      </item>
+    
+      <item>
+        <title>Using SmartView - Part II</title>
+        <description>&lt;p&gt;In my &lt;a href=&quot;/agile/management/alm/smartview/2014/07/03/using-smartview-part-i.html&quot;&gt;last post&lt;/a&gt; I explained the basics of using &lt;a href=&quot;http://smartviewapp.com&quot;&gt;SmartView&lt;/a&gt; to create a new project and add &lt;em&gt;User Stories&lt;/em&gt; to a &lt;em&gt;Story Map&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now that we have stories in our &lt;em&gt;Story Map&lt;/em&gt;, we are going to learn how to create releases and prioritize our work.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+
+&lt;h2&gt;Planning &lt;em&gt;Releases&lt;/em&gt;&lt;/h2&gt;
+
+&lt;p&gt;In my last post, I copied over the &lt;em&gt;User Activities&lt;/em&gt; and &lt;em&gt;User Tasks&lt;/em&gt; into &lt;em&gt;Groups&lt;/em&gt; and &lt;em&gt;Subgroups&lt;/em&gt; to create the &lt;em&gt;Story Map&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;After signing in into the application we can see the project index, which shows we have some stories in the &lt;em&gt;Planning&lt;/em&gt; section.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/sv_p2/index_planning.png&quot;  &gt;&lt;/p&gt;
+
+&lt;p&gt;Now is the time to create and assign releases.&lt;/p&gt;
+
+&lt;h3&gt;The &lt;em&gt;Ice Box&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;When we look at the &lt;em&gt;Story Map&lt;/em&gt; we can see all the stories have been assigned by default to the &lt;em&gt;Ice Box&lt;/em&gt; release.&lt;/p&gt;
+
+&lt;p&gt;The &lt;em&gt;Ice Box&lt;/em&gt; is the release to use when you are unsure where to put a &lt;em&gt;User Story&lt;/em&gt;. By default it is the only release created for a project. You can tell it is selected because it is highlighted in orange.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/sv_p2/story_map_on_ice.png&quot;  &gt;&lt;/p&gt;
+
+&lt;p&gt;You can also tell that a story is assigned to a release by looking at the top right corner of the story. In this case you will see the &lt;em&gt;cute&lt;/em&gt; ice cube and the code to identify the release: &lt;em&gt;ICE&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/sv_p2/story_on_ice.png&quot;  &gt;&lt;/p&gt;
+
+&lt;p&gt;Now we’ll learn how to change the release of a story.&lt;/p&gt;
+
+&lt;h3&gt;Release management&lt;/h3&gt;
+
+&lt;p&gt;By using the menu in the top left corner &lt;span class=&quot;fa-stack&quot;&gt;&lt;i class=&quot;fa fa-square fa-stack-2x&quot;&gt;&lt;/i&gt;&lt;i class=&quot;fa fa-th fa-inverse fa-stack-1x&quot;&gt;&lt;/i&gt;&lt;/span&gt; we can access the &lt;em&gt;Releases&lt;/em&gt; page.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/sv_p2/releases_menu.png&quot;  &gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;em&gt;Releases&lt;/em&gt; page shows all the releases created for the project that are in progress or completed. So far we have only one release in progress(the default one) and zero completed.&lt;/p&gt;
+
+&lt;p&gt;I will create two more releases so I can assign &lt;em&gt;User Stories&lt;/em&gt; and start working on them.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/sv_p2/new_Releases.png&quot;  &gt;&lt;/p&gt;
+
+&lt;p&gt;Each release has a &lt;em&gt;Tag&lt;/em&gt; to identify it when looking at &lt;em&gt;User Stories&lt;/em&gt; or working with the &lt;em&gt;Story Map&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;I choose the code &lt;em&gt;MIN&lt;/em&gt; for the first minimal release and &lt;em&gt;FCY&lt;/em&gt; for the second, fancier release. (I personally prefer to use meaningful codes but if you find R1, R2, etc. clearer feel free to use them.)&lt;/p&gt;
+
+&lt;h3&gt;Assigning releases to stories&lt;/h3&gt;
+
+&lt;p&gt;Going back to the &lt;em&gt;Story Map&lt;/em&gt; view, we can tell the that the releases have been added because in the top right corner the release toolbar now shows three releases: ICE, MIN and FCY.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/sv_p2/releases_toolbar.png&quot;  &gt;&lt;/p&gt;
+
+&lt;p&gt;Before we start with the release assignment I want to make sure we are not filtering using the current release (I will explain why in a bit). To do so, I will turn on the filter to &lt;em&gt;Show all releases&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/sv_p2/show_all_releases_filter.png&quot;  &gt;&lt;/p&gt;
+
+&lt;p&gt;To assign a &lt;em&gt;Release&lt;/em&gt; to a &lt;em&gt;User Story&lt;/em&gt; we just need to drag the release to the story and drop it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/sv_p2/assign_release.png&quot;  &gt;&lt;/p&gt;
+
+&lt;p&gt;You can see that the release changed because, instead of showing &lt;em&gt;ICE&lt;/em&gt;, the story shows &lt;em&gt;MIN&lt;/em&gt; or &lt;em&gt;FCY&lt;/em&gt; in the top right corner beside the &lt;em&gt;Release&lt;/em&gt; &lt;i class=&#39;fa fa-code-fork&#39;&gt;&lt;/i&gt; icon.&lt;/p&gt;
+
+&lt;h3&gt;Now you see me, now you don&amp;rsquo;t&lt;/h3&gt;
+
+&lt;p&gt;Though looking at all the releases at once can be useful, most of the time you will probably want to work with just one release at a time.&lt;/p&gt;
+
+&lt;p&gt;The &lt;em&gt;Releases&lt;/em&gt; toolbar not only lets us assign releases to stories but also works as a filter to select which release is showing in the &lt;em&gt;Story Map&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Unless the &lt;em&gt;Show all releases&lt;/em&gt; filter is selected (you can tell because the &lt;i class=&#39;fa fa-filter&#39;&gt;&lt;/i&gt; icon is highlighted) the selected release dictates which stories are displayed on the &lt;em&gt;Story Map&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Using the &lt;em&gt;MIN&lt;/em&gt; release filter, the &lt;em&gt;Story Map&lt;/em&gt; view changes to show only those stories.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/sv_p2/release_min_filter.png&quot;  &gt;&lt;/p&gt;
+
+&lt;p&gt;For the &lt;em&gt;FCY&lt;/em&gt; release we get similar results.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/sv_p2/release_fcy_filter.png&quot;  &gt;&lt;/p&gt;
+
+&lt;p&gt;Take note that the &lt;em&gt;Organize Email Group&lt;/em&gt; folder changes to show the amount of stories in each release.&lt;/p&gt;
+
+&lt;h3&gt;What&amp;rsquo;s next?&lt;/h3&gt;
+
+&lt;p&gt;In the next post in the series we will explore how to start working with the stories, assign them to the &lt;em&gt;Backlog&lt;/em&gt; and use the &lt;em&gt;Kanban Board&lt;/em&gt; to manage workflow.&lt;/p&gt;
+
+&lt;p&gt;In the meantime feel free to take advantage of the interactive guides that come with &lt;em&gt;SmartView&lt;/em&gt; to learn, in a series of steps, all the other functionalities that the application has to offer.&lt;/p&gt;
+
+&lt;p&gt;To access the &lt;em&gt;Guides&lt;/em&gt; just move your mouse to the bottom left corner and click the &lt;i class=&#39;fa fa-book&#39;&gt;&lt;/i&gt; icon inside the orange speech bubble.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/sv_p1/guides.png&quot;  &gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 04 Jul 2014 21:39:46 -0300</pubDate>
+        <link>http://blog.smartviewapp.com/agile/management/alm/smartview/2014/07/04/using-smartview-part-ii.html</link>
+        <guid isPermaLink="true">http://blog.smartviewapp.com/agile/management/alm/smartview/2014/07/04/using-smartview-part-ii.html</guid>
+        
+        
+        <category>agile</category>
+        
+        <category>management</category>
+        
+        <category>alm</category>
+        
+        <category>smartview</category>
+        
+      </item>
+    
+      <item>
+        <title>Using SmartView - Part I</title>
+        <description>&lt;p&gt;Not so long ago I wrote a &lt;a href=&quot;/management/agile/2014/04/06/an-owners-journey.html&quot;&gt;post&lt;/a&gt; about a &lt;a href=&quot;http://smartviewapp.com&quot;&gt;lean project management tool&lt;/a&gt; that I have been working on for the past year and a half.&lt;/p&gt;
+
+&lt;p&gt;We are about to release the &lt;em&gt;open beta&lt;/em&gt; and start collecting feedback before our official release.&lt;/p&gt;
+
+&lt;p&gt;Though you can sign up and try it out on your own, a bit of help is never amiss. Here is the first installment in a series of posts to explain the basic steps for using &lt;em&gt;SmartView&lt;/em&gt;.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+
+&lt;h2&gt;Working with your project&lt;/h2&gt;
+
+&lt;p&gt;First of all we need a project to work with. Right now the project index will show that we have no projects. We can remedy that situation easily by creating a new one.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/sv_p1/empty_index.png&quot;  &gt;&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s use a fictitious email client application called &lt;strong&gt;Spamzilla&lt;/strong&gt; to serve as an example.&lt;/p&gt;
+
+&lt;p&gt;Following the &lt;em&gt;create project&lt;/em&gt; link will lead us to a form where we can enter the project name and start date.&lt;/p&gt;
+
+&lt;p&gt;Once the project is created, the &lt;em&gt;project index&lt;/em&gt; shows &lt;strong&gt;Spamzilla&lt;/strong&gt; as the only project so far with the progress at zero. When you have more projects you will be able to see the progress for all of them.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/sv_p1/project_index_zero.png&quot;  &gt;&lt;/p&gt;
+
+&lt;h3&gt;Setting up the &lt;em&gt;Story Map&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;If you already have a &lt;em&gt;Story Map&lt;/em&gt; that you are using with your team it is very easy to transfer all the information to &lt;em&gt;SmartView&lt;/em&gt;. If you don&amp;rsquo;t, please follow &lt;a href=&quot;http://winnipegagilist.blogspot.ca/2012/03/how-to-create-user-story-map.html&quot;&gt;Steve Rogalsky&amp;rsquo;s&lt;/a&gt; post to start (you won&amp;rsquo;t regret it, and yes, &lt;strong&gt;Spamzilla&lt;/strong&gt; is inspired by his example).&lt;/p&gt;
+
+&lt;p&gt;The &lt;em&gt;Story Map&lt;/em&gt; that we have on our wall would look like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/sv_p1/story_map_wall.png&quot;  &gt;&lt;/p&gt;
+
+&lt;p&gt;But our &lt;em&gt;Story Map&lt;/em&gt; so far is empty:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/sv_p1/empty_story_map.png&quot;  &gt;&lt;/p&gt;
+
+&lt;p&gt;However, copying over the information is straightforward.&lt;/p&gt;
+
+&lt;h3&gt;Creating &lt;em&gt;Groups&lt;/em&gt; and &lt;em&gt;Subgroups&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;In a typical &lt;em&gt;Story Map&lt;/em&gt; we have &lt;em&gt;User Activities&lt;/em&gt; and &lt;em&gt;User Tasks&lt;/em&gt;. But in &lt;em&gt;SmartView&lt;/em&gt;, these are called &lt;em&gt;Groups&lt;/em&gt; and &lt;em&gt;Subgroups&lt;/em&gt;, respectively.&lt;/p&gt;
+
+&lt;p&gt;For each of the &lt;em&gt;User Activities&lt;/em&gt; in the &lt;em&gt;Story Map&lt;/em&gt; we will create a &lt;em&gt;Group&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/sv_p1/groups.png&quot;  &gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;em&gt;Groups&lt;/em&gt; are represented as folders (&lt;i class=&#39;fa fa-folder fa-2x&#39;&gt;&lt;/i&gt;) and the selected &lt;em&gt;Group&lt;/em&gt; looks like an open folder highlighted in orange (&lt;i class=&#39;fa fa-folder-open fa-2x orange&#39;&gt;&lt;/i&gt;).&lt;/p&gt;
+
+&lt;p&gt;Now for each of the &lt;em&gt;User Tasks&lt;/em&gt; in the &lt;em&gt;Story Map&lt;/em&gt; we will create a matching &lt;em&gt;Subgroup&lt;/em&gt;. Here is the example for &lt;em&gt;Organize Email&lt;/em&gt; (the first &lt;em&gt;User Activity&lt;/em&gt;/&lt;em&gt;Group&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/sv_p1/subgroups.png&quot;  &gt;&lt;/p&gt;
+
+&lt;h3&gt;Adding &lt;em&gt;User Stories&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;The next step is to load the stories into each &lt;em&gt;Group&lt;/em&gt;. The &lt;i class=&quot;fa fa-cog&quot;&gt;&lt;/i&gt; icon displays the menu for the &lt;em&gt;Subgroup&lt;/em&gt; and you can choose the &lt;i class=&#39;fa fa-plus&#39;&gt;&lt;/i&gt; to add a new &lt;em&gt;User Story&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;When you finish adding a story you can choose the &lt;i class=&#39;fa fa-check&#39;&gt;&lt;/i&gt; icon to save it or the &lt;i class=&#39;fa fa-plus&#39;&gt;&lt;/i&gt; icon to save it and add another. The &lt;i class=&#39;fa fa-plus&#39;&gt;&lt;/i&gt; icon may come in handy as you can add multiple stories without having to go back to the menu.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/sv_p1/adding_stories.png&quot;  &gt;&lt;/p&gt;
+
+&lt;h3&gt;What&amp;rsquo;s next?&lt;/h3&gt;
+
+&lt;p&gt;In the next post in the series we will explore how to assign releases, choose priorities and start building our backlog.&lt;/p&gt;
+
+&lt;p&gt;In the meantime feel free to take advantage of the interactive guides that come with &lt;em&gt;SmartView&lt;/em&gt; to learn, in a series of steps, all the other functionalities that the application has to offer.&lt;/p&gt;
+
+&lt;p&gt;To access the &lt;em&gt;Guides&lt;/em&gt; just move your mouse to the bottom left corner and click the &lt;i class=&#39;fa fa-book&#39;&gt;&lt;/i&gt; icon inside the orange speech bubble.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/sv_p1/guides.png&quot;  &gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 03 Jul 2014 17:21:40 -0300</pubDate>
+        <link>http://blog.smartviewapp.com/agile/management/alm/smartview/2014/07/03/using-smartview-part-i.html</link>
+        <guid isPermaLink="true">http://blog.smartviewapp.com/agile/management/alm/smartview/2014/07/03/using-smartview-part-i.html</guid>
+        
+        
+        <category>agile</category>
+        
+        <category>management</category>
+        
+        <category>alm</category>
+        
+        <category>smartview</category>
+        
+      </item>
+    
+      <item>
+        <title>An Owner&#39;s Journey</title>
+        <description>&lt;p&gt;Not so long ago I celebrated five years of working as an independent consultant for my own company &lt;a href=&quot;http://maventhought.com&quot;&gt;MavenThought Inc.&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;As a &lt;strong&gt;quality expert&lt;/strong&gt; I had the chance to work with multiple companies and teams to help them &amp;ldquo;get better at what they do&amp;rdquo;. Inspired by all the successful results, I decided to reach this further and &lt;strong&gt;build&lt;/strong&gt; a product to help teams work more efficiently.&lt;/p&gt;
+
+&lt;p&gt;Becoming an owner wasn&amp;rsquo;t easy. How did it come about? Well, it all started around 20 years ago&amp;hellip;&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+
+&lt;h2&gt;Once upon a time&lt;/h2&gt;
+
+&lt;p&gt;When I started my career more than 20 years ago, I discovered quickly enough, probably like many of you, that I wanted to excel at my job. During my first few years of university, I was really lucky because I managed to meet many fascinating people—people who inspired me and from whom I learned a lot.&lt;/p&gt;
+
+&lt;p&gt;Realizing how beneficial mentoring and training was for me fueled my desire to do that for others and give as much as I could back to the community.&lt;/p&gt;
+
+&lt;p&gt;While still working on my master’s degree in computer science at &lt;strong&gt;the University of Buenos Aires&lt;/strong&gt;, I started working as a teaching assistant in &lt;em&gt;Algorithms and data structures I &amp;amp; II&lt;/em&gt; and then in the &lt;em&gt;Compilers lab&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;It was that great experience that led me to keep working in universities and colleges teaching Object Oriented Programming and Object Oriented Analysis, and for a very short period of time I was even a kindergarten music teacher!&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;With great power comes lots of bills&lt;/em&gt;, so it is quite common in &lt;em&gt;Argentina&lt;/em&gt; to work in the field by day and teach at night. Teaching combined with working in the field is a great way to keep up to date with current technologies and work on new methodologies at the same time.&lt;/p&gt;
+
+&lt;p&gt;I have always been passionate about coding, and when sharing code became widely available I jumped on the bandwagon writing my &lt;a href=&quot;http://github.com/amirci&quot;&gt;own libraries&lt;/a&gt;, blogging, etc.&lt;/p&gt;
+
+&lt;p&gt;However, I was a tad late—my years of free time working on projects were behind me because I had to focus on my family. Don&amp;rsquo;t get me wrong, I still participated in and supported &lt;a href=&quot;http://maventhought.com/#community&quot;&gt;many user groups&lt;/a&gt;, but it was hard for me to find as much time as I wanted to collaborate on projects.&lt;/p&gt;
+
+&lt;h2&gt;Get Smart!&lt;/h2&gt;
+
+&lt;p&gt;So the question was this: How could I share what I had learned so far with others, not only just about coding practices and methodologies, but also about capturing requirements, planning, estimating and delivering successful products without burning my team out in the process?&lt;/p&gt;
+
+&lt;p&gt;I wanted to take the tools, processes and metrics that I was using successfully for my own clients and projects and explain why I find them so useful and how easy it would be for others to use them too.&lt;/p&gt;
+
+&lt;p&gt;First I wanted to develop a &lt;strong&gt;Kanban&lt;/strong&gt; board to manage flow and capacity. For planning, I wanted a &lt;strong&gt;Story Map&lt;/strong&gt; to help clients plan releases and manage the &lt;em&gt;backlog&lt;/em&gt; to avoid cluttering the &lt;em&gt;input&lt;/em&gt; to the board with stories/cards. However, I was hoping to find a way to make them work together without having to manually sync them.&lt;/p&gt;
+
+&lt;p&gt;Metrics were a big component as well because I wanted to show how fast the release could be built and what the problematic areas were in the flow. Finding out if the WIP limits were set correctly for a client’s capacity was also important.&lt;/p&gt;
+
+&lt;p&gt;My initial attempt was to try to model all these expectations with existing software and integrate it using APIs, but it was quite a bit of work and there were too many dependencies and unknown factors. I did some experiments and left it at that.&lt;/p&gt;
+
+&lt;p&gt;I decided I wanted full control to implement all the features I find useful plus all the others that are missing in existing tools. Also, I wanted to do it while implementing all the high quality processes that I preach about (dogfooding), making sure that our release cycle is short and sweet.&lt;/p&gt;
+
+&lt;p&gt;And overnight &lt;a href=&quot;http://smartviewapp.com&quot;&gt;SmartView&lt;/a&gt; was born and I became an owner.&lt;/p&gt;
+
+&lt;h2&gt;Que sera, sera&lt;/h2&gt;
+
+&lt;p&gt;Of course as an &lt;strong&gt;owner&lt;/strong&gt; I wanted it all! Deliver it fast, deliver it soon, make it pretty, include mobile apps, API and virtual reality and integrate it with Angry Birds!&lt;/p&gt;
+
+&lt;p&gt;Wow, I was really excited, anxious, happy and concerned, all at the same time. I needed to slow down, organize my thoughts and decide on a course of action.&lt;/p&gt;
+
+&lt;p&gt;I also wanted to quell my fear of never actually releasing anything, so I decided on the following:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Stick to a methodology&lt;/strong&gt; that you believe in and let it drive you: We used the &lt;em&gt;Story Map&lt;/em&gt; for releases, used the &lt;em&gt;Kanban&lt;/em&gt; board and wrote scenarios to drive our acceptances testing and TDD all the way.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Find the smartest team&lt;/strong&gt; of developers you can find: All the members of my team are seniors in their field, and I have worked with them in the past so I was really confident in their abilities.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Be an owner&lt;/strong&gt;: I didn’t want to be just a developer or just an architect. I set the guidelines, set goals, made myself available and helped out as much as I could. It’s important to aim high and keep the vision going.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Keep release cycles short&lt;/strong&gt;: As soon as the features are ready, we can deploy them.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;We started using a &lt;em&gt;Story Map&lt;/em&gt; on a wall and one of the popular electronic &lt;em&gt;Kanban&lt;/em&gt; boards.&lt;/p&gt;
+
+&lt;p&gt;Our &lt;em&gt;first minimal release&lt;/em&gt; happened after a couple of months and was aimed to let us start using the app. So after that we ditched the other tools and switched completely to using &lt;strong&gt;SmartView&lt;/strong&gt; to build &lt;strong&gt;SmartView&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Building the app while using it at the same time is an excellent way to make sure it is always in a working state.&lt;/p&gt;
+
+&lt;p&gt;And the rest is history! We are almost ready to open the public beta, we have an iOS app in the App Store and we are positive that we can help many teams become more productive!&lt;/p&gt;
+
+&lt;p&gt;Giving back to the community and helping others is a wonderful, infectious feeling.&lt;/p&gt;
+
+&lt;p&gt;As &lt;em&gt;Lope de Vega&lt;/em&gt; used to say: Quien lo probo, lo sabe (Those who taste it, know).&lt;/p&gt;
+</description>
+        <pubDate>Sun, 06 Apr 2014 21:52:37 -0300</pubDate>
+        <link>http://blog.smartviewapp.com/management/agile/2014/04/06/an-owners-journey.html</link>
+        <guid isPermaLink="true">http://blog.smartviewapp.com/management/agile/2014/04/06/an-owners-journey.html</guid>
+        
+        
+        <category>management</category>
+        
+        <category>agile</category>
+        
+      </item>
+    
+  </channel>
+</rss>
