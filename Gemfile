@@ -11,3 +11,5 @@ group :jekyll_plugins do
     gem "octopress-video-tag"
     gem "rdiscount"
 end
+
+gem 'sinatra', '~> 1.4.2'
