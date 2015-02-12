@@ -31,3 +31,14 @@ Also you can run:
   bundle exec jekyll build
 ```
 to generate the site on */public* folder
+
+## Deploy
+
+We need to re-build the site and then commit the changes to heroku. So run:
+
+```sh
+  bundle exec jekyll build
+  git add . # Add all the changes made to the public folder
+  git commit -m "site updated"
+  git push heroku master
+```
