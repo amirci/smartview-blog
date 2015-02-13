@@ -17,6 +17,7 @@ gems:      ['octopress-image-tag']
 #    Jekyll & Plugins     #
 # ----------------------- #
 
+permalink: /:year/:month/:day/:title/
 category_dir: categories
 rdiscount:
   extensions:
