@@ -5,6 +5,7 @@ $footer-height: 20px;
 $footer-padding: 10px;
 $smartview-orange: #ee3600;
 $page-padding: 30px;
+$site-backgroud: white;
 
 
 .site-header {
@@ -78,7 +79,7 @@ $page-padding: 30px;
 
 html, body { height: 100% }
 .page-content {
-  background: #d1d1d1;
+  background: $site-backgroud;
   color: #404855;
   font-size: 14px;
   font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
