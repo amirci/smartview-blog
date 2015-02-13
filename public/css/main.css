@@ -461,11 +461,12 @@ pre {
   font-size: 14px; }
   .site-header a {
     text-decoration: none;
-    line-height: 100px;
+    line-height: 80px;
     color: #ffffff; }
   .site-header .site-nav {
     float: none;
-    height: 100px; }
+    height: 80px;
+    padding-top: 20px; }
   .site-header .logo {
     float: left; }
     .site-header .logo a, .site-header .logo a:hover, .site-header .logo a:visited, .site-header .logo a:link, .site-header .logo a:active {
@@ -475,7 +476,7 @@ pre {
     .site-header .logo .site-title {
       margin: 0;
       font-size: 24px;
-      padding: 20px 20px 0 10px;
+      padding: 0 20px 0 0;
       line-height: 40px;
       text-shadow: 0px 2px 15px #222;
       letter-spacing: -1.5px;
@@ -495,7 +496,10 @@ pre {
   .site-header .pages {
     padding-top: 5px; }
     .site-header .pages ul {
+      display: block;
       list-style: none; }
+      .site-header .pages ul li {
+        float: left; }
     .site-header .pages .page-link {
       padding: 0 15px;
       color: #ffffff; }
@@ -506,14 +510,14 @@ html, body {
   height: 100%; }
 
 body {
-  padding-top: 100px; }
+  padding-top: 80px; }
 
 .page-content {
   background: white;
   color: #404855;
   font-size: 14px;
   font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-  padding: 15px 0px; }
+  padding: 35px 0px; }
   .page-content h1 {
     font-size: 30px;
     margin-top: 0px;
