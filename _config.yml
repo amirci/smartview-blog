@@ -11,7 +11,12 @@ github_username:
 markdown: rdiscount
 
 
-gems:      ['octopress-image-tag']
+gems:
+  - octopress-image-tag
+  - octopress-assign-tag
+  - octopress-capture-tag
+  - octopress-include-tag
+  - octopress-filters
 
 # ----------------------- #
 #    Jekyll & Plugins     #

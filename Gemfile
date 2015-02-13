@@ -9,6 +9,10 @@ group :jekyll_plugins do
     gem "octopress-codeblock"
     gem "octopress-quote-tag"
     gem "octopress-video-tag"
+    gem "octopress-assign-tag"
+    gem "octopress-capture-tag"
+    gem "octopress-include-tag"
+    gem "octopress-filters"
     gem "rdiscount"
 end
 
