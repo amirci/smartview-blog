@@ -11,11 +11,11 @@
 
       <div class="trigger pages">
         <ul class="nav navbar-nav">
-          {% for page in site.pages %}
-            {% if page.title %}
-              <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-            {% endif %}
-          {% endfor %}
+          <li><a class="page-link" href="{{ site.baseurl }}/">All</a></li>
+          {% for category in site.categories %}
+            {% capture category_url %}/{{ site.category.dir }}/{{ category | first | slugize | downcase | replace:' ','-' }}{% endcapture %}
+            <li><a class="page-link" href="{{ category_url | prepend: site.baseurl }}">{{ category | first | capitalize }}</a></li>
+          {% endfor%}
         </ul>
       </div>
     </nav>
