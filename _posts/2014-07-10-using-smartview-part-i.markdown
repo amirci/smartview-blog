@@ -12,7 +12,7 @@ We are about to release the _open beta_ and start collecting feedback before our
 
 Though you can sign up and try it out on your own, a bit of help is never amiss. Here is the first installment in a series of posts to explain the basic steps for using _SmartView_.
 
-<!--more-->
+<!-- more -->
 
 ## Working with your project
 
