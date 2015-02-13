@@ -1,7 +1,7 @@
 # Site settings
 title: SmartView
 email:
-description: The Smartest tool for lean project management
+description: SmartView is an agile lean project management and planning tool that combines a story map to manage the backlog with releases and a Kanban board to monitor productivity and status.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://blog.smartviewapp.com" # the base hostname & protocol for your site
 twitter_username:
