@@ -14,6 +14,9 @@
 .repl_history
 build/
 
+## SASS
+/.sass-cache/
+
 ## Documentation cache and generated files:
 /.yardoc/
 /_yardoc/
