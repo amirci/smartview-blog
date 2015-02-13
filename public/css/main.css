@@ -448,27 +448,34 @@ pre {
   .highlight .il {
     color: #099; }
 
+.navbar-fixed-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  top: 0px; }
+
 .site-header {
   background-color: #404855;
   border: none;
   font-size: 14px; }
   .site-header a {
     text-decoration: none;
-    line-height: 70px;
+    line-height: 100px;
     color: #ffffff; }
   .site-header .site-nav {
     float: none;
-    height: 70px; }
+    height: 100px; }
   .site-header .logo {
     float: left; }
     .site-header .logo a, .site-header .logo a:hover, .site-header .logo a:visited, .site-header .logo a:link, .site-header .logo a:active {
       text-decoration: none; }
     .site-header .logo .logo-smartview {
-      height: 40px; }
+      height: 60px; }
     .site-header .logo .site-title {
       margin: 0;
       font-size: 24px;
-      padding: 10px 20px 0 10px;
+      padding: 20px 20px 0 10px;
       line-height: 40px;
       text-shadow: 0px 2px 15px #222;
       letter-spacing: -1.5px;
@@ -498,18 +505,18 @@ pre {
 html, body {
   height: 100%; }
 
+body {
+  padding-top: 100px; }
+
 .page-content {
-  background: #d1d1d1;
+  background: white;
   color: #404855;
   font-size: 14px;
   font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-  height: auto;
-  min-height: 100%;
-  min-height: -webkit-calc(100% - 70px - 30px*2);
-  min-height: calc(100% - 70px - 30px*2); }
+  padding: 0px 0px; }
   .page-content h1 {
     font-size: 30px;
-    margin-top: 20px;
+    margin-top: 0px;
     margin-bottom: 10px; }
   .page-content h2 {
     font-size: 24px; }
@@ -518,19 +525,10 @@ html, body {
     text-decoration: none; }
     .page-content a:hover {
       color: #ee3600; }
-  .page-content .wrapper {
-    padding-bottom: 20px; }
-
-.site-footer {
-  background: #e93500;
-  color: white;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  padding: 10px 0px;
-  border: 0px;
-  position: relative;
-  clear: both;
-  z-index: 10;
-  height: 20px;
-  margin-top: -40px; }
-  .site-footer .content {
-    text-align: center; }
+  .page-content .post-excerpt {
+    border-top: 1px solid rgba(89, 70, 63, 0.25);
+    padding: 3em 0; }
+  .page-content .post-list li {
+    margin-bottom: 0px; }
+    .page-content .post-list li:first-child article {
+      border-top: 0px; }
