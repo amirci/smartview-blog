@@ -2,7 +2,7 @@ $nav-bar-background-color: #404855;
 $nav-height: 100px;
 $nav-padding: 30px;
 $smartview-orange: #ee3600;
-$page-padding: 0px;
+$page-padding: 15px;
 $site-backgroud: white;
 $article-padding: 3em;
 
@@ -122,6 +122,11 @@ body { padding-top: $nav-height; }
 
     &:first-child article {
       border-top: 0px;
+      padding-top: 0px;
     }
+  }
+
+  .post-link {
+    font-size: inherit;
   }
 }

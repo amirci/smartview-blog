@@ -513,7 +513,7 @@ body {
   color: #404855;
   font-size: 14px;
   font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-  padding: 0px 0px; }
+  padding: 15px 0px; }
   .page-content h1 {
     font-size: 30px;
     margin-top: 0px;
@@ -531,4 +531,7 @@ body {
   .page-content .post-list li {
     margin-bottom: 0px; }
     .page-content .post-list li:first-child article {
-      border-top: 0px; }
+      border-top: 0px;
+      padding-top: 0px; }
+  .page-content .post-link {
+    font-size: inherit; }
