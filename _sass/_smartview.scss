@@ -5,6 +5,9 @@ $nav-bar-background-color: #404855;
 $nav-height: 100px;
 $nav-logo-height: 60px;
 
+$smaller-nav-height: 40px;
+$smaller-nav-logo-height: 30px;
+
 $page-padding: 15px;
 $site-backgroud: white;
 $article-padding: 3em;
@@ -14,9 +17,7 @@ $article-padding: 3em;
 a {
   color: $links-color;
 
-  &:visited {
-    color: $links-color;
-  }
+  &:visited { color: $links-color; }
 
   &:hover {
     color: $smartview-orange;
@@ -29,9 +30,7 @@ a {
   float: none;
 }
 
-.site-nav .page-link {
-  line-height: inherit;
-}
+.site-nav .page-link { line-height: inherit; }
 
 
 /* Header definition */
@@ -44,21 +43,20 @@ a {
 }
 
 .site-header {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
   min-height: $nav-height;
   border: 0px;
   background-color: $nav-bar-background-color;
   color: #ffffff;
 
-  .site-nav a {
-    line-height: $nav-height;
-  }
+  .site-nav a { line-height: $nav-height; }
 
   .logo {
     float: left;
 
-    .logo-smartview {
-      height: $nav-logo-height
-    }
+    .logo-smartview { height: $nav-logo-height }
 
     .site-title {
       margin: 0;
@@ -71,9 +69,7 @@ a {
       color: #ffffff;
       line-height: $nav-height - 5px;
 
-      &:hover {
-        color: $smartview-orange;
-      }
+      &:hover { color: $smartview-orange; }
     }
 
     .beta {
@@ -114,15 +110,39 @@ a {
   .site-title, .site-nav .page-link {
     color: #ffffff;
 
-    &:hover {
-      color: $smartview-orange;
+    &:hover { color: $smartview-orange; }
+  }
+}
+
+.site-header.site-header-smaller {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  height: $smaller-nav-height;
+  min-height: $smaller-nav-height;
+
+  .site-nav a { line-height: $smaller-nav-height; }
+
+  .logo {
+    .site-title { line-height: $smaller-nav-height - 5px; }
+    .logo-smartview { height: $smaller-nav-logo-height; }
+    .beta {
+      font-size: 0.45em;
+      right: 4px;
+      bottom: -14px;
     }
   }
 }
 
+.header-padding {
+  height: $nav-height;
+  display: hidden;
+
+  &.site-hader-smaller { height: $smaller-nav-height; }
+}
+
 /* Page Content definition */
 html, body { height: 100%; }
-body { padding-top: $nav-height; }
 
 .page-content {
   background: $site-backgroud;
@@ -137,9 +157,7 @@ body { padding-top: $nav-height; }
     margin-bottom: 10px;
   }
 
-  h2 {
-    font-size: 24px;
-  }
+  h2 { font-size: 24px; }
 
   a {
     color: #000000;
@@ -163,8 +181,5 @@ body { padding-top: $nav-height; }
     }
   }
 
-  .post-link {
-    font-size: inherit;
-  }
+  .post-link { font-size: inherit; }
 }
-
