@@ -1,12 +1,40 @@
-$nav-bar-background-color: #404855;
-$nav-height: 80px;
-$nav-padding: 20px;
 $smartview-orange: #ee3600;
-$page-padding: 35px;
+$links-color: black;
+$nav-bar-background-color: #404855;
+
+$nav-height: 100px;
+$nav-logo-height: 60px;
+
+$page-padding: 15px;
 $site-backgroud: white;
 $article-padding: 3em;
 
+/* Override General Settings */
 
+a {
+  color: $links-color;
+
+  &:visited {
+    color: $links-color;
+  }
+
+  &:hover {
+    color: $smartview-orange;
+    text-decoration: none;
+  }
+}
+
+.site-nav {
+  line-height: inherit;
+  float: none;
+}
+
+.site-nav .page-link {
+  line-height: inherit;
+}
+
+
+/* Header definition */
 .navbar-fixed-top {
   position: fixed;
   right: 0;
@@ -16,48 +44,32 @@ $article-padding: 3em;
 }
 
 .site-header {
+  min-height: $nav-height;
+  border: 0px;
   background-color: $nav-bar-background-color;
-  border: none;
-  font-size: 14px;
+  color: #ffffff;
 
-  a {
-    text-decoration: none;
+  .site-nav a {
     line-height: $nav-height;
-    color: #ffffff;
-  }
-
-  .site-nav {
-    float: none;
-    height: $nav-height;
-    padding-top: $nav-padding;
-
-    li.active {
-      background-color: $smartview-orange;
-      color: white;
-      &:hover {
-        background-color: darken($smartview-orange, 15%);
-      }
-    }
   }
 
   .logo {
     float: left;
-    a, a:hover, a:visited, a:link, a:active {text-decoration: none; }
 
     .logo-smartview {
-      height: $nav-height - $nav-padding;
+      height: $nav-logo-height
     }
 
     .site-title {
       margin: 0;
       font-size: 24px;
       padding: 0 20px 0 0;
-      line-height: 40px;
       text-shadow: 0px 2px 15px #222;
       letter-spacing: -1.5px;
       float: left;
       position: relative;
       color: #ffffff;
+      line-height: $nav-height - 5px;
 
       &:hover {
         color: $smartview-orange;
@@ -68,36 +80,47 @@ $article-padding: 3em;
       font-size: 0.55em;
       font-style: italic;
       position: absolute;
-      right: 4px;
-      bottom: -14px;
+      right: 10px;
+      bottom: -20px;
       font-weight: bold;
       letter-spacing: 1px;
     }
   }
 
   .pages {
-    padding-top: 5px;
-
     ul {
       display: block;
       list-style: none;
+      margin-bottom: 0px;
 
       li {
         float: left;
+        &.active {
+          background-color: $smartview-orange;
+          color: white;
+          &:hover {
+            background-color: darken($smartview-orange, 15%);
+          }
+        }
       }
     }
 
     .page-link {
+      display: block;
       padding: 0 15px;
-      color: #ffffff;
+    }
+  }
 
-      &:hover {
-        color: $smartview-orange;
-      }
+  .site-title, .site-nav .page-link {
+    color: #ffffff;
+
+    &:hover {
+      color: $smartview-orange;
     }
   }
 }
 
+/* Page Content definition */
 html, body { height: 100%; }
 body { padding-top: $nav-height; }
 
@@ -144,3 +167,4 @@ body { padding-top: $nav-height; }
     font-size: inherit;
   }
 }
+
