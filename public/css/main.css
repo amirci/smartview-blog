@@ -448,6 +448,23 @@ pre {
   .highlight .il {
     color: #099; }
 
+/* Override General Settings */
+a {
+  color: black; }
+  a:visited {
+    color: black; }
+  a:hover {
+    color: #ee3600;
+    text-decoration: none; }
+
+.site-nav {
+  line-height: inherit;
+  float: none; }
+
+.site-nav .page-link {
+  line-height: inherit; }
+
+/* Header definition */
 .navbar-fixed-top {
   position: fixed;
   right: 0;
@@ -456,68 +473,91 @@ pre {
   top: 0px; }
 
 .site-header {
+  -webkit-transition: all 1.0s;
+  -moz-transition: all 1.0s;
+  transition: all 1.0s;
+  min-height: 100px;
+  border: 0px;
   background-color: #404855;
-  border: none;
-  font-size: 14px; }
-  .site-header a {
-    text-decoration: none;
-    line-height: 80px;
-    color: #ffffff; }
-  .site-header .site-nav {
-    float: none;
-    height: 80px;
-    padding-top: 20px; }
+  color: #ffffff; }
+  .site-header .site-nav a {
+    line-height: 100px; }
   .site-header .logo {
     float: left; }
-    .site-header .logo a, .site-header .logo a:hover, .site-header .logo a:visited, .site-header .logo a:link, .site-header .logo a:active {
-      text-decoration: none; }
     .site-header .logo .logo-smartview {
       height: 60px; }
     .site-header .logo .site-title {
       margin: 0;
       font-size: 24px;
       padding: 0 20px 0 0;
-      line-height: 40px;
       text-shadow: 0px 2px 15px #222;
       letter-spacing: -1.5px;
       float: left;
       position: relative;
-      color: #ffffff; }
+      color: #ffffff;
+      line-height: 95px; }
       .site-header .logo .site-title:hover {
         color: #ee3600; }
     .site-header .logo .beta {
       font-size: 0.55em;
       font-style: italic;
       position: absolute;
-      right: 4px;
-      bottom: -14px;
+      right: 10px;
+      bottom: -20px;
       font-weight: bold;
       letter-spacing: 1px; }
-  .site-header .pages {
-    padding-top: 5px; }
-    .site-header .pages ul {
-      display: block;
-      list-style: none; }
-      .site-header .pages ul li {
-        float: left; }
-    .site-header .pages .page-link {
-      padding: 0 15px;
-      color: #ffffff; }
-      .site-header .pages .page-link:hover {
-        color: #ee3600; }
+  .site-header .pages ul {
+    display: block;
+    list-style: none;
+    margin-bottom: 0px; }
+    .site-header .pages ul li {
+      float: left; }
+      .site-header .pages ul li.active {
+        background-color: #ee3600;
+        color: white; }
+        .site-header .pages ul li.active:hover {
+          background-color: #a22500; }
+  .site-header .pages .page-link {
+    display: block;
+    padding: 0 15px; }
+  .site-header .site-title, .site-header .site-nav .page-link {
+    color: #ffffff; }
+    .site-header .site-title:hover, .site-header .site-nav .page-link:hover {
+      color: #ee3600; }
 
+.site-header.site-header-smaller {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  height: 40px;
+  min-height: 40px; }
+  .site-header.site-header-smaller .site-nav a {
+    line-height: 40px; }
+  .site-header.site-header-smaller .logo .site-title {
+    line-height: 35px; }
+  .site-header.site-header-smaller .logo .logo-smartview {
+    height: 30px; }
+  .site-header.site-header-smaller .logo .beta {
+    font-size: 0.45em;
+    right: 4px;
+    bottom: -14px; }
+
+.header-padding {
+  height: 100px;
+  display: hidden; }
+  .header-padding.site-hader-smaller {
+    height: 40px; }
+
+/* Page Content definition */
 html, body {
   height: 100%; }
-
-body {
-  padding-top: 80px; }
 
 .page-content {
   background: white;
   color: #404855;
   font-size: 14px;
   font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-  padding: 35px 0px; }
+  padding: 15px 0px; }
   .page-content h1 {
     font-size: 30px;
     margin-top: 0px;

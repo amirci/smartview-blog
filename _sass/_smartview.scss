@@ -43,9 +43,9 @@ a {
 }
 
 .site-header {
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 1.0s;
+  -moz-transition: all 1.0s;
+  transition: all 1.0s;
   min-height: $nav-height;
   border: 0px;
   background-color: $nav-bar-background-color;
@@ -145,6 +145,7 @@ a {
 html, body { height: 100%; }
 
 .page-content {
+  // background: url('/images/introduction_background_image.png') no-repeat 10% 0 $site-backgroud;
   background: $site-backgroud;
   color: #404855;
   font-size: 14px;
