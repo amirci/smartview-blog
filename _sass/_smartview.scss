@@ -30,6 +30,14 @@ $article-padding: 3em;
     float: none;
     height: $nav-height;
     padding-top: $nav-padding;
+
+    li.active {
+      background-color: $smartview-orange;
+      color: white;
+      &:hover {
+        background-color: darken($smartview-orange, 15%);
+      }
+    }
   }
 
   .logo {
