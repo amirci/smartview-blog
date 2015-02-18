@@ -147,7 +147,7 @@ html, body { height: 100%; }
 
 .smartview-background {
   position: fixed;
-  top: 0;
+  top: $nav-height;
   right: 0;
   opacity: 0.15;
   z-index: -1;
