@@ -1,5 +1,6 @@
 # Site settings
-title: SmartView
+title: &page_title
+  SmartView
 email:
 description: SmartView is an agile lean project management and planning tool that combines a story map to manage the backlog with releases and a Kanban board to monitor productivity and status.
 baseurl: "" # the subpath of your site, e.g. /blog/
@@ -23,7 +24,13 @@ gems:
 # ----------------------- #
 
 permalink: /:year/:month/:day/:title/
-category_dir: categories
+
+category:
+  prefix: Category
+  dir: categories
+  url: category
+  title: *page_title
+
 rdiscount:
   extensions:
     - autolink

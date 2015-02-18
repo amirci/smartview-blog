@@ -1,12 +1,39 @@
-$nav-bar-background-color: #404855;
-$nav-height: 100px;
-$nav-padding: 30px;
 $smartview-orange: #ee3600;
+$links-color: black;
+$nav-bar-background-color: #404855;
+
+$nav-height: 100px;
+$nav-logo-height: 60px;
+
+$smaller-nav-height: 40px;
+$smaller-nav-logo-height: 30px;
+
 $page-padding: 15px;
 $site-backgroud: white;
 $article-padding: 3em;
 
+/* Override General Settings */
 
+a {
+  color: $links-color;
+
+  &:visited { color: $links-color; }
+
+  &:hover {
+    color: $smartview-orange;
+    text-decoration: none;
+  }
+}
+
+.site-nav {
+  line-height: inherit;
+  float: none;
+}
+
+.site-nav .page-link { line-height: inherit; }
+
+
+/* Header definition */
 .navbar-fixed-top {
   position: fixed;
   right: 0;
@@ -16,78 +43,109 @@ $article-padding: 3em;
 }
 
 .site-header {
+  -webkit-transition: all 1.0s;
+  -moz-transition: all 1.0s;
+  transition: all 1.0s;
+  min-height: $nav-height;
+  border: 0px;
   background-color: $nav-bar-background-color;
-  border: none;
-  font-size: 14px;
+  color: #ffffff;
 
-  a {
-    text-decoration: none;
-    line-height: $nav-height;
-    color: #ffffff;
-  }
-
-  .site-nav {
-    float: none;
-    height: $nav-height;
-  }
+  .site-nav a { line-height: $nav-height; }
 
   .logo {
     float: left;
-    a, a:hover, a:visited, a:link, a:active {text-decoration: none; }
 
-    .logo-smartview {
-      height: 60px;
-    }
+    .logo-smartview { height: $nav-logo-height }
 
     .site-title {
       margin: 0;
       font-size: 24px;
-      padding: 20px 20px 0 10px;
-      line-height: 40px;
+      padding: 0 20px 0 0;
       text-shadow: 0px 2px 15px #222;
       letter-spacing: -1.5px;
       float: left;
       position: relative;
       color: #ffffff;
+      line-height: $nav-height - 5px;
 
-      &:hover {
-        color: $smartview-orange;
-      }
+      &:hover { color: $smartview-orange; }
     }
 
     .beta {
       font-size: 0.55em;
       font-style: italic;
       position: absolute;
-      right: 4px;
-      bottom: -14px;
+      right: 10px;
+      bottom: -20px;
       font-weight: bold;
       letter-spacing: 1px;
     }
   }
 
   .pages {
-    padding-top: 5px;
-
     ul {
+      display: block;
       list-style: none;
+      margin-bottom: 0px;
+
+      li {
+        float: left;
+        &.active {
+          background-color: $smartview-orange;
+          color: white;
+          &:hover {
+            background-color: darken($smartview-orange, 15%);
+          }
+        }
+      }
     }
 
     .page-link {
+      display: block;
       padding: 0 15px;
-      color: #ffffff;
+    }
+  }
 
-      &:hover {
-        color: $smartview-orange;
-      }
+  .site-title, .site-nav .page-link {
+    color: #ffffff;
+
+    &:hover { color: $smartview-orange; }
+  }
+}
+
+.site-header.site-header-smaller {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  height: $smaller-nav-height;
+  min-height: $smaller-nav-height;
+
+  .site-nav a { line-height: $smaller-nav-height; }
+
+  .logo {
+    .site-title { line-height: $smaller-nav-height - 5px; }
+    .logo-smartview { height: $smaller-nav-logo-height; }
+    .beta {
+      font-size: 0.45em;
+      right: 4px;
+      bottom: -14px;
     }
   }
 }
 
+.header-padding {
+  height: $nav-height;
+  display: hidden;
+
+  &.site-hader-smaller { height: $smaller-nav-height; }
+}
+
+/* Page Content definition */
 html, body { height: 100%; }
-body { padding-top: $nav-height; }
 
 .page-content {
+  // background: url('/images/introduction_background_image.png') no-repeat 10% 0 $site-backgroud;
   background: $site-backgroud;
   color: #404855;
   font-size: 14px;
@@ -100,9 +158,7 @@ body { padding-top: $nav-height; }
     margin-bottom: 10px;
   }
 
-  h2 {
-    font-size: 24px;
-  }
+  h2 { font-size: 24px; }
 
   a {
     color: #000000;
@@ -126,7 +182,5 @@ body { padding-top: $nav-height; }
     }
   }
 
-  .post-link {
-    font-size: inherit;
-  }
+  .post-link { font-size: inherit; }
 }
