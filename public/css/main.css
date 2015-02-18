@@ -552,8 +552,15 @@ a {
 html, body {
   height: 100%; }
 
+.smartview-background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  opacity: 0.15;
+  z-index: -1; }
+
 .page-content {
-  background: white;
+  background: transparent;
   color: #404855;
   font-size: 14px;
   font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;

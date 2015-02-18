@@ -149,11 +149,13 @@ html, body { height: 100%; }
   top: 0;
   right: 0;
   opacity: 0.15;
+  z-index: -1;
 }
 
 .page-content {
   // background: url('/images/introduction_background_image.png') no-repeat 10% 0 $site-backgroud;
-  background: $site-backgroud;
+  //background: $site-backgroud;
+  background: transparent;
   color: #404855;
   font-size: 14px;
   font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
