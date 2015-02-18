@@ -144,6 +144,13 @@ a {
 /* Page Content definition */
 html, body { height: 100%; }
 
+.smartview-background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  opacity: 0.15;
+}
+
 .page-content {
   // background: url('/images/introduction_background_image.png') no-repeat 10% 0 $site-backgroud;
   background: $site-backgroud;
