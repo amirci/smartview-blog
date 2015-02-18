@@ -515,7 +515,8 @@ a {
       .site-header .pages ul li.active {
         background-color: #ee3600;
         color: white; }
-        .site-header .pages ul li.active:hover {
+        .site-header .pages ul li.active a:hover {
+          color: white;
           background-color: #a22500; }
   .site-header .pages .page-link {
     display: block;
