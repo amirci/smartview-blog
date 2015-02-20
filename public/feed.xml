@@ -5,13 +5,13 @@
     <description>SmartView is an agile lean project management and planning tool that combines a story map to manage the backlog with releases and a Kanban board to monitor productivity and status.</description>
     <link>http://blog.smartviewapp.com/</link>
     <atom:link href="http://blog.smartviewapp.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 18 Feb 2015 18:37:07 -0300</pubDate>
-    <lastBuildDate>Wed, 18 Feb 2015 18:37:07 -0300</lastBuildDate>
+    <pubDate>Fri, 20 Feb 2015 09:58:10 -0300</pubDate>
+    <lastBuildDate>Fri, 20 Feb 2015 09:58:10 -0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Using SmartView - Part III</title>
-        <description>&lt;p&gt;In my last two posts we discussed the basics of &lt;a href=&quot;http://smartviewapp.com&quot;&gt;SmartView&lt;/a&gt; and how to start &lt;a href=&quot;/2014/07/03/using-smartview-part-i/&quot;&gt;using the Story Map&lt;/a&gt; and &lt;a href=&quot;/2014/07/04/using-smartview-part-ii/&quot;&gt;creating releases&lt;/a&gt;.&lt;/p&gt;
+        <description>&lt;p&gt;In my last two posts we discussed the basics of &lt;a href=&quot;http://smartviewapp.com&quot;&gt;SmartView&lt;/a&gt; and how to start &lt;a href=&quot;/2014/07/10/using-smartview-part-i/&quot;&gt;using the Story Map&lt;/a&gt; and &lt;a href=&quot;/2014/07/13/using-smartview-part-ii/&quot;&gt;creating releases&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;With the releases in place it is time to start working on the &lt;em&gt;Backlog&lt;/em&gt; and the &lt;em&gt;Kanban Board&lt;/em&gt; to view and manage our workflow.&lt;/p&gt;
 
@@ -99,9 +99,9 @@ that represent the phases of the &lt;em&gt;Kanban Board&lt;/em&gt; (other than &
 
 &lt;p&gt;&lt;img src=&quot;/images/sv_p1/guides.png&quot;  &gt;&lt;/p&gt;
 </description>
-        <pubDate>Sat, 05 Jul 2014 14:09:56 -0300</pubDate>
-        <link>http://blog.smartviewapp.com/2014/07/05/using-smartview-part-iii/</link>
-        <guid isPermaLink="true">http://blog.smartviewapp.com/2014/07/05/using-smartview-part-iii/</guid>
+        <pubDate>Mon, 14 Jul 2014 14:09:56 -0300</pubDate>
+        <link>http://blog.smartviewapp.com/2014/07/14/using-smartview-part-iii/</link>
+        <guid isPermaLink="true">http://blog.smartviewapp.com/2014/07/14/using-smartview-part-iii/</guid>
         
         
         <category>agile</category>
@@ -116,7 +116,7 @@ that represent the phases of the &lt;em&gt;Kanban Board&lt;/em&gt; (other than &
     
       <item>
         <title>Using SmartView - Part II</title>
-        <description>&lt;p&gt;In my &lt;a href=&quot;/2014/07/03/using-smartview-part-i/&quot;&gt;last post&lt;/a&gt; I explained the basics of using &lt;a href=&quot;http://smartviewapp.com&quot;&gt;SmartView&lt;/a&gt; to create a new project and add &lt;em&gt;User Stories&lt;/em&gt; to a &lt;em&gt;Story Map&lt;/em&gt;.&lt;/p&gt;
+        <description>&lt;p&gt;In my &lt;a href=&quot;/2014/07/10/using-smartview-part-i/&quot;&gt;last post&lt;/a&gt; I explained the basics of using &lt;a href=&quot;http://smartviewapp.com&quot;&gt;SmartView&lt;/a&gt; to create a new project and add &lt;em&gt;User Stories&lt;/em&gt; to a &lt;em&gt;Story Map&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;Now that we have stories in our &lt;em&gt;Story Map&lt;/em&gt;, we are going to learn how to create releases and prioritize our work.&lt;/p&gt;
 
@@ -207,9 +207,9 @@ that represent the phases of the &lt;em&gt;Kanban Board&lt;/em&gt; (other than &
 
 &lt;p&gt;&lt;img src=&quot;/images/sv_p1/guides.png&quot;  &gt;&lt;/p&gt;
 </description>
-        <pubDate>Fri, 04 Jul 2014 21:39:46 -0300</pubDate>
-        <link>http://blog.smartviewapp.com/2014/07/04/using-smartview-part-ii/</link>
-        <guid isPermaLink="true">http://blog.smartviewapp.com/2014/07/04/using-smartview-part-ii/</guid>
+        <pubDate>Sun, 13 Jul 2014 21:39:46 -0300</pubDate>
+        <link>http://blog.smartviewapp.com/2014/07/13/using-smartview-part-ii/</link>
+        <guid isPermaLink="true">http://blog.smartviewapp.com/2014/07/13/using-smartview-part-ii/</guid>
         
         
         <category>agile</category>
@@ -293,9 +293,9 @@ that represent the phases of the &lt;em&gt;Kanban Board&lt;/em&gt; (other than &
 
 &lt;p&gt;&lt;img src=&quot;/images/sv_p1/guides.png&quot;  &gt;&lt;/p&gt;
 </description>
-        <pubDate>Thu, 03 Jul 2014 17:21:40 -0300</pubDate>
-        <link>http://blog.smartviewapp.com/2014/07/03/using-smartview-part-i/</link>
-        <guid isPermaLink="true">http://blog.smartviewapp.com/2014/07/03/using-smartview-part-i/</guid>
+        <pubDate>Thu, 10 Jul 2014 17:21:40 -0300</pubDate>
+        <link>http://blog.smartviewapp.com/2014/07/10/using-smartview-part-i/</link>
+        <guid isPermaLink="true">http://blog.smartviewapp.com/2014/07/10/using-smartview-part-i/</guid>
         
         
         <category>agile</category>
