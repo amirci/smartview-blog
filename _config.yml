@@ -11,6 +11,8 @@ github_username:
 # Build settings
 markdown: rdiscount
 
+sass:
+  style: compressed
 
 gems:
   - octopress-image-tag
