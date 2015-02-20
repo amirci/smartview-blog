@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "Using SmartView - Part II"
-date: 2014-07-04 19:39:46 -0500
+date: 2014-07-13 19:39:46 -0500
 comments: true
 categories: [Agile, Management, ALM, SmartView]
 ---
 
-In my [last post]({% post_url 2014-07-03-using-smartview-part-i %}) I explained the basics of using [SmartView](http://smartviewapp.com) to create a new project and add _User Stories_ to a _Story Map_.
+In my [last post]({% post_url 2014-07-10-using-smartview-part-i %}) I explained the basics of using [SmartView](http://smartviewapp.com) to create a new project and add _User Stories_ to a _Story Map_.
 
 Now that we have stories in our _Story Map_, we are going to learn how to create releases and prioritize our work.
 
