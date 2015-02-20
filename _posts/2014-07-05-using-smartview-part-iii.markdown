@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "Using SmartView - Part III"
-date: 2014-07-14 12:09:56 -0500
+date: 2014-07-05 12:09:56 -0500
 comments: true
 categories: [Agile, Management, ALM, SmartView]
 ---
 
-In my last two posts we discussed the basics of [SmartView](http://smartviewapp.com) and how to start [using the Story Map]({% post_url 2014-07-10-using-smartview-part-i %}) and [creating releases]({% post_url 2014-07-13-using-smartview-part-ii %}).
+In my last two posts we discussed the basics of [SmartView](http://smartviewapp.com) and how to start [using the Story Map]({% post_url 2014-07-03-using-smartview-part-i %}) and [creating releases]({% post_url 2014-07-04-using-smartview-part-ii %}).
 
 With the releases in place it is time to start working on the _Backlog_ and the _Kanban Board_ to view and manage our workflow.
 
