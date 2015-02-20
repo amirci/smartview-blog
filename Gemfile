@@ -16,4 +16,4 @@ group :jekyll_plugins do
     gem "rdiscount"
 end
 
-gem 'sinatra', '~> 1.4.2'
+gem "sinatra"

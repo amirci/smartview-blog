@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Using SmartView - Part II</title>
+  <meta name="description" content="In my last post I explained the basics of using SmartView to create a new project and add User Stories to a Story Map.Now that we have stories in our Story M...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://blog.smartviewapp.com/2014/07/13/using-smartview-part-ii/">
+  <link rel="alternate" type="application/rss+xml" title="SmartView" href="http://blog.smartviewapp.com/feed.xml" />
+
+  <script type="text/javascript" src="/javascripts/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="/javascripts/bootstrap/scrollspy.js"></script>
+  <script type="text/javascript" src="/javascripts/bootstrap/collapse.js"></script>
+<head>
+
+  <body data-offset="70" data-spy="scroll" data-target="#header-menu">
+
+    <header id="#site-header" class="navbar-fixed-top">
+  <div class="navbar navbar-default navbar-fixed-top" id="header-menu">
+    <div class="navbar-inner">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" data-target="#navbar-collapse" data-toggle="collapse" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" data-target="#introduction-row" href="/" id="introduction-menu">
+            <img alt="SmartView" id="logo-smartview" src="/images/logo_smartview.png">
+            <span class="beta">beta</span>
+          </a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-collapse" style="height: 70px;">
+          <ul class="nav navbar-nav">
+            <li><a href="https://smartviewapp.com#features">Features</a></li>
+            <li><a href="https://smartviewapp.com#metrics">Metrics</a></li>
+            <li><a href="https://smartviewapp.com#pricing">Pricing</a></li>
+            <li><a href="https://smartviewapp.com#support">Support</a></li>
+            <li><a href="https://smartviewapp.com#contact">Contact Us</a></li>
+            <li class="active"><a href="/">Blog</a></li>
+            <li id="signup-free-menu"><a href="https://app.smartviewapp.com/users/sign_up">Sign Up <strong>FREE</strong></a></li>
+          </ul>
+          <div id="login-menu"><a href="https://app.smartviewapp.com">Log In</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="inner-wrapper">
+          <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Using SmartView - Part II</h1>
+    <p class="post-meta">Jul 13, 2014</p>
+  </header>
+
+  <article class="post-content">
+    <p>In my <a href="/2014/07/10/using-smartview-part-i/">last post</a> I explained the basics of using <a href="http://smartviewapp.com">SmartView</a> to create a new project and add <em>User Stories</em> to a <em>Story Map</em>.</p>
+
+<p>Now that we have stories in our <em>Story Map</em>, we are going to learn how to create releases and prioritize our work.</p>
+
+<!-- more -->
+
+
+<h2>Planning <em>Releases</em></h2>
+
+<p>In my last post, I copied over the <em>User Activities</em> and <em>User Tasks</em> into <em>Groups</em> and <em>Subgroups</em> to create the <em>Story Map</em>.</p>
+
+<p>After signing in into the application we can see the project index, which shows we have some stories in the <em>Planning</em> section.</p>
+
+<p><img src="/images/sv_p2/index_planning.png"  ></p>
+
+<p>Now is the time to create and assign releases.</p>
+
+<h3>The <em>Ice Box</em></h3>
+
+<p>When we look at the <em>Story Map</em> we can see all the stories have been assigned by default to the <em>Ice Box</em> release.</p>
+
+<p>The <em>Ice Box</em> is the release to use when you are unsure where to put a <em>User Story</em>. By default it is the only release created for a project. You can tell it is selected because it is highlighted in orange.</p>
+
+<p><img src="/images/sv_p2/story_map_on_ice.png"  ></p>
+
+<p>You can also tell that a story is assigned to a release by looking at the top right corner of the story. In this case you will see the <em>cute</em> ice cube and the code to identify the release: <em>ICE</em>.</p>
+
+<p><img src="/images/sv_p2/story_on_ice.png"  ></p>
+
+<p>Now we’ll learn how to change the release of a story.</p>
+
+<h3>Release management</h3>
+
+<p>By using the menu in the top left corner <span class="fa-stack"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-th fa-inverse fa-stack-1x"></i></span> we can access the <em>Releases</em> page.</p>
+
+<p><img src="/images/sv_p2/releases_menu.png"  ></p>
+
+<p>The <em>Releases</em> page shows all the releases created for the project that are in progress or completed. So far we have only one release in progress(the default one) and zero completed.</p>
+
+<p>I will create two more releases so I can assign <em>User Stories</em> and start working on them.</p>
+
+<p><img src="/images/sv_p2/new_Releases.png"  ></p>
+
+<p>Each release has a <em>Tag</em> to identify it when looking at <em>User Stories</em> or working with the <em>Story Map</em>.</p>
+
+<p>I choose the code <em>MIN</em> for the first minimal release and <em>FCY</em> for the second, fancier release. (I personally prefer to use meaningful codes but if you find R1, R2, etc. clearer feel free to use them.)</p>
+
+<h3>Assigning releases to stories</h3>
+
+<p>Going back to the <em>Story Map</em> view, we can tell the that the releases have been added because in the top right corner the release toolbar now shows three releases: ICE, MIN and FCY.</p>
+
+<p><img src="/images/sv_p2/releases_toolbar.png"  ></p>
+
+<p>Before we start with the release assignment I want to make sure we are not filtering using the current release (I will explain why in a bit). To do so, I will turn on the filter to <em>Show all releases</em>.</p>
+
+<p><img src="/images/sv_p2/show_all_releases_filter.png"  ></p>
+
+<p>To assign a <em>Release</em> to a <em>User Story</em> we just need to drag the release to the story and drop it.</p>
+
+<p><img src="/images/sv_p2/assign_release.png"  ></p>
+
+<p>You can see that the release changed because, instead of showing <em>ICE</em>, the story shows <em>MIN</em> or <em>FCY</em> in the top right corner beside the <em>Release</em> <i class='fa fa-code-fork'></i> icon.</p>
+
+<h3>Now you see me, now you don&rsquo;t</h3>
+
+<p>Though looking at all the releases at once can be useful, most of the time you will probably want to work with just one release at a time.</p>
+
+<p>The <em>Releases</em> toolbar not only lets us assign releases to stories but also works as a filter to select which release is showing in the <em>Story Map</em>.</p>
+
+<p>Unless the <em>Show all releases</em> filter is selected (you can tell because the <i class='fa fa-filter'></i> icon is highlighted) the selected release dictates which stories are displayed on the <em>Story Map</em>.</p>
+
+<p>Using the <em>MIN</em> release filter, the <em>Story Map</em> view changes to show only those stories.</p>
+
+<p><img src="/images/sv_p2/release_min_filter.png"  ></p>
+
+<p>For the <em>FCY</em> release we get similar results.</p>
+
+<p><img src="/images/sv_p2/release_fcy_filter.png"  ></p>
+
+<p>Take note that the <em>Organize Email Group</em> folder changes to show the amount of stories in each release.</p>
+
+<h3>What&rsquo;s next?</h3>
+
+<p>In the next post in the series we will explore how to start working with the stories, assign them to the <em>Backlog</em> and use the <em>Kanban Board</em> to manage workflow.</p>
+
+<p>In the meantime feel free to take advantage of the interactive guides that come with <em>SmartView</em> to learn, in a series of steps, all the other functionalities that the application has to offer.</p>
+
+<p>To access the <em>Guides</em> just move your mouse to the bottom left corner and click the <i class='fa fa-book'></i> icon inside the orange speech bubble.</p>
+
+<p><img src="/images/sv_p1/guides.png"  ></p>
+
+  </article>
+
+</div>
+
+        </div>
+
+        <img src="/images/sign-smartview.png" class="smartview-background" />
+      </div>
+    </div>
+
+  </body>
+
+</html>

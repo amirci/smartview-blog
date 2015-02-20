@@ -1,14 +1,19 @@
-$smartview-orange: #ee3600;
+@import "bootstrap-custom";
+
 $links-color: black;
-$nav-bar-background-color: #404855;
+
+// HEADER
+$screen-xxs-min: 640px;
+$navbar-height: 70px;
+$smartview-orange: #ee3600;
+$smartview-smartest-caption: #feb902;
+$background-start: #860d00;
+$background-end: #f23900;
+$menu-background-color: #393939;
+$smartview-gray: #404855;
+
+// Page content variables
 $content-background: #efefef;
-
-$nav-height: 100px;
-$nav-logo-height: 60px;
-
-$smaller-nav-height: 40px;
-$smaller-nav-logo-height: 30px;
-
 $page-padding: 15px;
 $site-backgroud: white;
 $article-padding: 3em;
@@ -26,129 +31,132 @@ a {
   }
 }
 
-.site-nav {
-  line-height: inherit;
-  float: none;
-}
+/**
+ * Header definition
+ */
 
-.site-nav .page-link { line-height: inherit; }
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+  padding-top: $navbar-height;
 
-
-/* Header definition */
-.navbar-fixed-top {
-  position: fixed;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-  top: 0px;
-}
-
-.site-header {
-  -webkit-transition: all 1.0s;
-  -moz-transition: all 1.0s;
-  transition: all 1.0s;
-  min-height: $nav-height;
-  border: 0px;
-  background-color: $nav-bar-background-color;
-  color: #ffffff;
-
-  .site-nav a { line-height: $nav-height; }
-
-  .logo {
-    float: left;
-
-    .logo-smartview { height: $nav-logo-height }
-
-    .site-title {
-      margin: 0;
-      font-size: 24px;
-      padding: 0 20px 0 0;
-      text-shadow: 0px 2px 15px #222;
-      letter-spacing: -1.5px;
-      float: left;
-      position: relative;
-      color: #ffffff;
-      line-height: $nav-height - 5px;
-
-      &:hover { color: $smartview-orange; }
-    }
-
-    .beta {
-      font-size: 0.55em;
-      font-style: italic;
-      position: absolute;
-      right: 10px;
-      bottom: -20px;
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
+  i.fa {
+    margin-right: 10px;
   }
+}
 
-  .pages {
-    ul {
-      display: block;
-      list-style: none;
-      margin-bottom: 0px;
+@media (max-width: $screen-xs-max) {
+  #site-header {
+    margin-bottom:0px;
+    border: 0px;
+  }
+}
 
-      li {
-        float: left;
-        &.active {
-          background-color: $smartview-orange;
-          color: white;
-          & a:hover {
-            color: white;
-            background-color: darken($smartview-orange, 15%);
-          }
-        }
+#header-menu {
+  @media (max-width: $screen-xs-max) {
+    position: static;
+    margin-bottom: 0px;
+    ul li {
+      height: $navbar-height / 2;
+      a {
+        height: $navbar-height / 2;
+        line-height: $navbar-height / 2;
       }
     }
+  }
+  @include gradient-vertical-three-colors($menu-background-color, lighten($menu-background-color, 5%), 50%, $menu-background-color);
+  border: 0px;
+  min-height: $navbar-height;
+  .navbar-header {
+    padding-right: 10px;
+    height: $navbar-height;
+  }
 
-    .page-link {
-      display: block;
-      padding: 0 15px;
+  a {
+    line-height: $navbar-height;
+    padding: 0 15px;
+    color: white;
+  }
+  a:hover { color: $smartview-orange; }
+
+  .navbar-toggle {
+    background: white;
+  }
+
+  #introduction-menu {
+    padding-left: 0px;
+    @media (max-width: $screen-xs-max) {
+      padding-left: 10px;
+    }
+  }
+  li.active {
+    a {
+      background-color: $smartview-orange;
+      color: white;
+    }
+    a:hover {
+      background-color: darken($smartview-orange, 15%);
     }
   }
 
-  .site-title, .site-nav .page-link {
-    color: #ffffff;
+  #login-menu {
+    @extend .hidden-sm;
+    @extend .hidden-xs;
+    float:right;
+    margin-top: 20px;
+    a {
+      @extend .btn;
+      @extend .btn-default;
+      @include button-variant(white, $smartview-orange, $background-start);
+      min-width: 100px;
+      text-transform: uppercase;
+    }
+  }
 
-    &:hover { color: $smartview-orange; }
+  #signup-free-menu {
+    @media (min-width: $screen-md-max) and (max-width: $screen-md-max) {
+      padding-left: 20px;
+    }
+    a {
+      color: #dda625;
+      &:hover {
+        font-weight: bold;
+        text-transform: uppercase;
+        background: $background-start;
+      }
+    }
+    @include text-emphasis-variant('ii', #dda625);
   }
 }
 
-.site-header.site-header-smaller {
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  transition: all 0.2s;
-  height: $smaller-nav-height;
-  min-height: $smaller-nav-height;
-
-  .site-nav a { line-height: $smaller-nav-height; }
-
-  .logo {
-    .site-title { line-height: $smaller-nav-height - 5px; }
-    .logo-smartview { height: $smaller-nav-logo-height; }
-    .beta {
-      font-size: 0.45em;
-      right: 4px;
+a.navbar-brand {
+  position: relative;
+  padding: 5px 30px 5px 10px;
+  .beta {
+      font-size: 0.70em;
+      font-style: italic;
+      position: absolute;
+      left: 144px;
       bottom: -14px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      top: 15px;
     }
-  }
 }
 
-.header-padding {
-  height: $nav-height;
-  display: hidden;
-
-  &.site-hader-smaller { height: $smaller-nav-height; }
+img#logo-smartview {
+  height: 40px;
+  display: inline;
 }
 
-/* Page Content definition */
+/**
+ * Page Content definition
+ */
 html, body { height: 100%; }
 
 .smartview-background {
   position: fixed;
-  top: $nav-height;
+  top: $navbar-height;
   right: 0;
   opacity: 0.15;
   z-index: 10;

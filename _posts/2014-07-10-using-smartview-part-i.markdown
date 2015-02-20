@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Using SmartView - Part I"
-date: 2014-07-03 15:21:40 -0500
+date: 2014-07-10 15:21:40 -0500
 comments: true
 categories: [Agile, Management, ALM, SmartView]
 ---
