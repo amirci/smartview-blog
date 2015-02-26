@@ -47,3 +47,5 @@ destination: public
 
 excerpt_separator: <!-- more -->
 excerpt_link: "Read more &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
+
+google_analytics_tracking_id: UA-60154170-1
