@@ -14,6 +14,7 @@ group :jekyll_plugins do
     gem "octopress-include-tag"
     gem "octopress-filters"
     gem "rdiscount"
+    gem 'jekyll-sitemap'
 end
 
 gem "sinatra"

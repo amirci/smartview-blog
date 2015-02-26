@@ -20,6 +20,7 @@ gems:
   - octopress-capture-tag
   - octopress-include-tag
   - octopress-filters
+  - jekyll-sitemap
 
 # ----------------------- #
 #    Jekyll & Plugins     #
