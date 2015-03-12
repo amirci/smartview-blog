@@ -168,16 +168,21 @@ html, body { height: 100%; }
   font-size: 14px;
   font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
   padding: 0px;
+  min-height: 100%;
 
   >.wrapper {
     background: white;
     padding-top: $page-padding;
     padding-bottom: $page-padding;
+    min-height: 100%;
 
     .inner-wrapper {
       background: transparent;
       position: relative;
       z-index: 100;
+      min-height: 100%;
+
+      > .row { min-height: 100%; }
     }
   }
 
@@ -212,4 +217,25 @@ html, body { height: 100%; }
   }
 
   .post-link { font-size: inherit; }
+
+  .col-md-9 {
+    border-right: 1px solid rgba(89,70,63, 0.25);
+    min-height: 100%;
+  }
+}
+
+aside.sidebar {
+  z-index: 200;
+
+  .list-group-item.active {
+    background-color: $smartview-orange;
+    border-color: $smartview-orange;
+
+    > .badge { color: $smartview-orange; }
+  }
+}
+
+@media(max-width: $screen-md-min) {
+  aside.sidebar { display: none; }
+  .page-content .col-md-9 { border-right: 0px; }
 }
