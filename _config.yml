@@ -22,6 +22,9 @@ gems:
   - octopress-filters
   - jekyll-sitemap
 
+# NOTE: vendor is mandatory to deploy to herkou. See http://www.markcampbell.me/jekyll/heroku/2013/05/18/how-to-set-up-jekyll-on-heroku.html
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'Procfile', 'Rakefile', 'README.md', 'vendor']
+
 # ----------------------- #
 #    Jekyll & Plugins     #
 # ----------------------- #
