@@ -2,20 +2,23 @@
 layout: default
 ---
 <div class="category-index">
-{% for post in site.categories[page.category] %}
-  {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
-  {% unless year == this_year %}
-    {% assign year = this_year %}
-    <h2 class="year">{{ year }}</h2>
-  {% endunless %}
-  <article>
-    <h1 class="post-title"><a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a></h2>
-    <p class="post-meta">
-      <span class="glyphicon glyphicon-calendar"></span>
-      <time datetime="{{ post.date | datetime | date_to_xmlschema }}" pubdate>{{ post.date | date: "<span class='month'>%b</span> <span class='day'>%d</span>, <span class='year'>%Y</span>"}}</time>&nbsp;
-      <span class="glyphicon glyphicon-tags"></span>&nbsp;
-      <span class="post-categories">{{ post.categories | category_links }}</span>
-    </p>
-  </article>
-{% endfor %}
+  <header>
+      <h1>Category: {{page.category | capitalize }}</h1>
+  </header>
+  {% for post in site.categories[page.category] %}
+    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% unless year == this_year %}
+      {% assign year = this_year %}
+      <h2 class="year">{{ year }}</h2>
+    {% endunless %}
+    <article>
+      <h1 class="post-title"><a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a></h2>
+      <p class="post-meta">
+        <span class="glyphicon glyphicon-calendar"></span>
+        <time datetime="{{ post.date | datetime | date_to_xmlschema }}" pubdate>{{ post.date | date: "<span class='month'>%b</span> <span class='day'>%d</span>, <span class='year'>%Y</span>"}}</time>&nbsp;
+        <span class="glyphicon glyphicon-tags"></span>&nbsp;
+        <span class="post-categories">{{ post.categories | category_links }}</span>
+      </p>
+    </article>
+  {% endfor %}
 </div>
