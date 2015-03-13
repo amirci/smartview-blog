@@ -22,6 +22,8 @@ gems:
   - octopress-filters
   - jekyll-sitemap
 
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'Procfile', 'Rakefile', 'README.md']
+
 # ----------------------- #
 #    Jekyll & Plugins     #
 # ----------------------- #
