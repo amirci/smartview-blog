@@ -5,6 +5,7 @@ $screen-xxs-min: 640px;
 $navbar-height: 70px;
 $smartview-orange: #ee3600;
 $smartview-smartest-caption: #feb902;
+$smartview-lightgray: rgba(89,70,63, 0.25);
 $background-start: #860d00;
 $background-end: #f23900;
 $menu-background-color: #393939;
@@ -201,7 +202,7 @@ html, body { height: 100%; }
   }
 
   .post-excerpt {
-    border-top: 1px solid rgba(89,70,63, 0.25);
+    border-top: 1px solid $smartview-lightgray;
     padding: $article-padding 0;
   }
 
@@ -217,7 +218,7 @@ html, body { height: 100%; }
   .post-link { font-size: inherit; }
 
   .col-md-9 {
-    border-right: 1px solid rgba(89,70,63, 0.25);
+    border-right: 1px solid $smartview-lightgray;
     min-height: 100%;
   }
 }
@@ -234,6 +235,34 @@ aside.sidebar {
 }
 
 @media(max-width: $screen-md-min) {
-  aside.sidebar { display: none; }
   .page-content .col-md-9 { border-right: 0px; }
+}
+
+.category-index {
+  h2.year {
+    float: left;
+    margin-top: 0px;
+    font-weight: normal;
+    display: inline-block;
+    position: relative;
+
+    @media(max-width: $screen-md-min) {
+      display: none;
+    }
+  }
+
+  article {
+    margin-left: 7em;
+    margin-bottom: 1.6em;
+
+    border-bottom: 1px solid rgba(89,70,63, 0.25);
+
+    &:last-child {
+      border-bottom: 0px;
+    }
+
+    &:first-child {
+      margin-top: 0px;
+    }
+  }
 }
