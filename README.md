@@ -38,7 +38,7 @@ The project is configured to build the site on heroku, it's not necesary build t
 Just commit the changes to heroku, i.e run:
 
 ```sh
-  git add . # Add all the changes made to the public folder
+  git add . # Add all the changes made to the site, e.g a new post added
   git commit -m "site updated"
   git push heroku master
 ```
