@@ -1,11 +1,19 @@
 ---
 layout: default
 ---
-
-<ul class="post-list">
-  {% for post in site.categories[page.category] %}
-    <li>
-      {% include article.html %}
-    </li>
-  {% endfor %}
-</ul>
+<div class="category-index">
+{% for post in site.categories[page.category] %}
+  {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+  {% unless year == this_year %}
+    {% assign year = this_year %}
+    <h2>{{ year }}</h2>
+  {% endunless %}
+  <article>
+    <h3><a href="{{ root_url }}{{ post.url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a></h3>
+    <time datetime="{{ post.date | datetime | date_to_xmlschema }}" pubdate>{{ post.date | date: "<span class='month'>%b</span> <span class='day'>%d</span> <span class='year'>%Y</span>"}}</time>
+    <footer>
+      <span class="post-categories">Posted in {{ post.categories | category_links }}</span>
+    </footer>
+  </article>
+{% endfor %}
+</div>
