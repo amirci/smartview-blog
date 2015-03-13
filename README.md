@@ -34,10 +34,10 @@ to generate the site on */public* folder
 
 ## Deploy
 
-We need to re-build the site and then commit the changes to heroku. So run:
+The project is configured to build the site on heroku, it's not necesary build the site before a deploy. 
+Just commit the changes to heroku, i.e run:
 
 ```sh
-  bundle exec jekyll build
   git add . # Add all the changes made to the public folder
   git commit -m "site updated"
   git push heroku master
