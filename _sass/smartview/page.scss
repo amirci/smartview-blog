@@ -1,0 +1,89 @@
+/**
+ * Page Content definition
+ */
+html, body { height: 100%; }
+
+.smartview-background {
+  position: fixed;
+  top: $navbar-height;
+  right: 0;
+  opacity: 0.15;
+  z-index: 10;
+}
+
+.page-content {
+  background: $content-background;
+  color: #404855;
+  font-size: 14px;
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  padding: 0px;
+  min-height: 100%;
+
+  >.wrapper {
+    background: white;
+    padding-top: $page-padding;
+    padding-bottom: $page-padding;
+    min-height: 100%;
+
+    .inner-wrapper {
+      background: transparent;
+      position: relative;
+      z-index: 100;
+      min-height: 100%;
+
+      > .row { min-height: 100%; }
+    }
+  }
+
+  h1 {
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  h2 { font-size: 24px; }
+
+  a {
+    color: #000000;
+    text-decoration: none;
+    &:hover {
+      color: $smartview-orange;
+    }
+  }
+
+  .post-excerpt {
+    border-top: 1px solid $smartview-lightgray;
+    padding: $article-padding 0;
+  }
+
+  .post-list li {
+    margin-bottom: 0px;
+
+    &:first-child article {
+      border-top: 0px;
+      padding-top: 0px;
+    }
+  }
+
+  .post-link { font-size: inherit; }
+
+  .col-md-9 {
+    border-right: 1px solid $smartview-lightgray;
+    min-height: 100%;
+  }
+}
+
+aside.sidebar {
+  z-index: 200;
+
+  .list-group-item.active {
+    background-color: $smartview-orange;
+    border-color: $smartview-orange;
+
+    > .badge { color: $smartview-orange; }
+  }
+}
+
+@media(max-width: $screen-md-min) {
+  .page-content .col-md-9 { border-right: 0px; }
+}

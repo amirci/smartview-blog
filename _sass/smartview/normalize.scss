@@ -1,0 +1,12 @@
+/* Override General Settings */
+
+a {
+  color: $links-color;
+
+  &:visited { color: $links-color; }
+
+  &:hover {
+    color: $smartview-orange;
+    text-decoration: none;
+  }
+}
