@@ -1,23 +1,14 @@
 /**
  * Header definition
  */
-
-body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-  font-weight: 300;
-  padding-top: $navbar-height;
-
-  i.fa {
-    margin-right: 10px;
-  }
-}
-
 @media (max-width: $screen-xs-max) {
   #site-header {
     margin-bottom:0px;
     border: 0px;
   }
 }
+
+#site-header { height: $navbar-height }
 
 #header-menu {
   @media (max-width: $screen-xs-max) {
