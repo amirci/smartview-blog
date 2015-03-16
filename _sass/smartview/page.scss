@@ -21,15 +21,11 @@
     background: white;
     padding-top: $page-padding;
     padding-bottom: $page-padding;
-    min-height: 100%;
 
     .inner-wrapper {
       background: transparent;
       position: relative;
       z-index: 100;
-      min-height: 100%;
-
-      > .row { min-height: 100%; }
     }
   }
 
@@ -67,7 +63,35 @@
 
   .col-md-9 {
     border-right: 1px solid $smartview-lightgray;
-    min-height: 100%;
+
+    @media(max-width: $screen-md-min) {
+      border-right: 0px;
+    }
+  }
+
+  // Use flex layout for desktop or higher
+  @media(min-width: $screen-md-min) {
+    @include flexbox;
+
+    > .wrapper {
+      @include flexbox;
+      width: $content-width - $spacing-unit;
+      padding-left: $spacing-unit / 2;
+      padding-right: $spacing-unit / 2;
+
+      .inner-wrapper {
+        @include flexbox;
+        width: 100%;
+
+        > .row {
+          @include flexbox;
+          width: 100%;
+          margin: 0px;
+
+          .col-md-9 { @include flex(2); }
+        }
+      }
+    }
   }
 }
 
@@ -80,8 +104,4 @@ aside.sidebar {
 
     > .badge { color: $smartview-orange; }
   }
-}
-
-@media(max-width: $screen-md-min) {
-  .page-content .col-md-9 { border-right: 0px; }
 }
