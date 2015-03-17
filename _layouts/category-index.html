@@ -12,8 +12,8 @@ layout: default
     <h1 class="post-title"><a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a></h2>
     <p class="post-meta">
       <span class="glyphicon glyphicon-calendar"></span>
-      <time datetime="{{ post.date | datetime | date_to_xmlschema }}" pubdate>{{ post.date | date: "<span class='month'>%b</span> <span class='day'>%d</span>, <span class='year'>%Y</span>"}}</time>&nbsp;
-      <span class="glyphicon glyphicon-tags"></span>&nbsp;
+      <time datetime="{{ post.date | datetime | date_to_xmlschema }}" pubdate>{{ post.date | date: "<span class='month'>%b</span> <span class='day'>%d</span>, <span class='year'>%Y</span>"}}</time>
+      <span class="glyphicon glyphicon-tags"></span>
       <span class="post-categories">{{ post.categories | category_links }}</span>
     </p>
   </article>
