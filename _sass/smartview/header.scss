@@ -65,9 +65,19 @@
     a {
       @extend .btn;
       @extend .btn-default;
-      @include button-variant(white, $smartview-orange, $background-start);
+      // @include button-variant(white, $smartview-orange, $background-start);
+      background-color: inherit;
+      color: $smartview-orange;
+      border: 0px;
       min-width: 100px;
       text-transform: uppercase;
+
+      &:active, &.active, &:hover {
+        color: $navbar-inverse-link-active-color;
+        background-color: $navbar-inverse-toggle-hover-bg;
+        border: 1px solid $navbar-inverse-toggle-border-color;
+        border-radius: $border-radius-base;
+      }
     }
   }
 
