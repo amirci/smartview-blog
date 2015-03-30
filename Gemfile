@@ -21,4 +21,4 @@ gem "rake"
 
 gem "sinatra"
 
-gem 'rack-ssl-enforcer'
+gem "rack-ssl-enforcer"
