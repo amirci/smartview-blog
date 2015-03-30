@@ -11,8 +11,17 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
   <script type="text/javascript" src="{{ "/javascripts/jquery-1.11.2.min.js" | prepend: site.baseurl }}"></script>
+  <script type="text/javascript" src="{{ "/javascripts/jquery.tooltipster.min.js" | prepend: site.baseurl }}"></script>
+  <script type="text/javascript" src="{{ "/javascripts/login_view_model.js" | prepend: site.baseurl }}"></script>
+  <script type="text/javascript" src="{{ "/javascripts/login_button.js" | prepend: site.baseurl }}"></script>
   <script type="text/javascript" src="{{ "/javascripts/bootstrap/scrollspy.js" | prepend: site.baseurl }}"></script>
   <script type="text/javascript" src="{{ "/javascripts/bootstrap/collapse.js" | prepend: site.baseurl }}"></script>
+  <script type="text/javascript" src="{{ "/javascripts/jquery.pnotify.min.js" | prepend: site.baseurl }}"></script>
 
   {% include google_analytics.html %}
+
+  <script type="text/javascript">
+    svApp = "{{site.smartview.app_site}}"
+    svApi = "{{site.smartview.api_site}}"
+  </script>
 <head>

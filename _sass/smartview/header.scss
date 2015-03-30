@@ -141,3 +141,93 @@ img#logo-smartview {
   height: 40px;
   display: inline;
 }
+
+#modal-login {
+  color: $smartview-gray;
+
+  .modal-content {
+    border: 0px;
+
+    @include box-shadow(none)
+  }
+
+  .modal-body {
+    background: $login-background;
+    border-radius: 6px;
+    padding: 20px;
+  }
+
+  form {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .submit-form {
+    padding-top: 10px;
+
+    button {
+      @extend .btn;
+      @extend .btn-default;
+      @include button-variant(white, $smartview-orange, darken($smartview-orange, 2%));
+    }
+  }
+
+  a { color: #428BCA }
+
+  .omniauth {
+    padding-top: 3px;
+
+    a {
+      text-align: center;
+      padding: 5px;
+      border-radius: 10px;
+      display: inline-block;
+      color: white;
+      text-decoration: none;
+      margin-right: 10px;
+      min-width: 50px;
+    }
+
+    i {
+      font-size: 1.2em;
+      padding-left: 0px;
+      margin-right: 0px;
+    }
+
+    .google {
+      background: $google-botton-color;
+    }
+
+    .facebook {
+      background: $facebook-color;
+    }
+
+    .omniauth-icon {
+      width: 40px;
+      height: 40px;
+    }
+
+  }
+}
+
+.tooltipster-base {
+  z-index: 2000;
+}
+
+.ui-pnotify-container {
+  padding: 0.8em;
+  margin: 0;
+}
+
+
+.alert-error {
+  @extend .alert-danger;
+}
+
+.ui-pnotify-icon .fa { line-height: 20px; }
+
+.login-tooltip {
+  background: $login-background;
+
+  .tooltipster-arrow span { border-color: $login-background; }
+}
