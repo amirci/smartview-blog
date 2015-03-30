@@ -63,6 +63,10 @@ default_asides: [asides/category_list.html]
 #    SmartView config     #
 # ----------------------- #
 smartview:
-  app_site: "https://app.smartviewapp.com"
-  api_site: "https://smartview-api.herokuapp.com"
-  landing_site: "https://smartviewapp.com"
+  #app_site: "https://app.smartviewapp.com"
+  #api_site: "https://smartview-api.herokuapp.com"
+  #landing_site: "https://smartviewapp.com"
+
+  app_site: "https://stage.smartviewapp.com"
+  api_site: "https://smartview-api-staging.herokuapp.com"
+  landing_site: "https://staging-landing-smartview.herokuapp.com"
