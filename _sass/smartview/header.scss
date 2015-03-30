@@ -1,0 +1,133 @@
+/**
+ * Header definition
+ */
+@media (max-width: $screen-xs-max) {
+  #site-header {
+    margin-bottom:0px;
+    border: 0px;
+  }
+}
+
+#site-header { height: $navbar-height }
+
+#header-menu {
+  @media (max-width: $screen-xs-max) {
+    position: static;
+    margin-bottom: 0px;
+    ul li {
+      height: $navbar-height / 2;
+      a {
+        height: $navbar-height / 2;
+        line-height: $navbar-height / 2;
+      }
+    }
+  }
+  @include gradient-vertical-three-colors($menu-background-color, lighten($menu-background-color, 5%), 50%, $menu-background-color);
+  border: 0px;
+  min-height: $navbar-height;
+  .navbar-header {
+    padding-right: 10px;
+    height: $navbar-height;
+  }
+
+  a {
+    line-height: $navbar-height;
+    padding: 0 15px;
+    color: white;
+  }
+  a:hover { color: $smartview-orange; }
+
+  .navbar-toggle {
+    background: white;
+  }
+
+  #introduction-menu {
+    padding-left: 0px;
+    @media (max-width: $screen-xs-max) {
+      padding-left: 10px;
+    }
+  }
+  li.active {
+    a {
+      background-color: $smartview-orange;
+      color: white;
+    }
+    a:hover {
+      background-color: darken($smartview-orange, 15%);
+    }
+  }
+
+  #login-menu {
+    @extend .hidden-sm;
+    @extend .hidden-xs;
+    float:right;
+    margin-top: 20px;
+    a {
+      @extend .btn;
+      @extend .btn-default;
+      @include button-variant(white, $smartview-orange, $background-start);
+      min-width: 100px;
+      text-transform: uppercase;
+    }
+  }
+
+  #signup-free-menu {
+    @media (min-width: $screen-md-max) and (max-width: $screen-md-max) {
+      padding-left: 20px;
+    }
+    a {
+      color: #dda625;
+      &:hover {
+        font-weight: bold;
+        text-transform: uppercase;
+        background: $background-start;
+      }
+    }
+    @include text-emphasis-variant('ii', #dda625);
+  }
+
+  @media (max-width: $screen-md-min) {
+    .navbar-header { float: none; }
+    .navbar-left, .navbar-right { float: none !important; }
+    .navbar-toggle { display: block; }
+    .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse { display: none!important; }
+    .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+    }
+    .navbar-nav>li { float: none; }
+    .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .collapse.in { display:block !important; }
+  }
+}
+
+a.navbar-brand {
+  position: relative;
+  padding: 5px 30px 5px 10px;
+  .beta {
+      font-size: 0.70em;
+      font-style: italic;
+      position: absolute;
+      left: 144px;
+      bottom: -14px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      top: 15px;
+    }
+}
+
+img#logo-smartview {
+  height: 40px;
+  display: inline;
+}

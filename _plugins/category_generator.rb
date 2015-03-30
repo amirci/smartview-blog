@@ -80,8 +80,8 @@ module Jekyll
     #  +category+     is the category currently being processed.
     def write_category_index(category_dir, category)
       index = CategoryIndex.new(self, self.source, category_dir, category)
-      #index.render(self.layouts, site_payload)
-      #index.write(self.dest)
+      index.render(self.layouts, site_payload)
+      index.write(self.dest)
       # Record the fact that this page has been added, otherwise Site::cleanup will remove it.
       self.pages << index
 
@@ -159,7 +159,7 @@ module Jekyll
       dir = @context.registers[:site].config['category']['dir']
       # TODO: URLize categories
       slug = File.join('/', dir, sluggify(category))
-      "<a class='category' href='#{slug}/'>#{category}</a>"
+      "<a class='category' href='#{slug}/'>#{category.capitalize}</a>"
     end
 
     # returns a string which is ready for urlizing.

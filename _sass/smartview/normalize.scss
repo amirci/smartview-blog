@@ -1,0 +1,24 @@
+/* Override General Settings */
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+  padding-top: $navbar-height;
+
+  i.fa {
+    margin-right: 10px;
+  }
+}
+
+html, body { height: 100%; }
+
+a {
+  color: $links-color;
+
+  &:visited { color: $links-color; }
+
+  &:hover {
+    color: $smartview-orange;
+    text-decoration: none;
+  }
+}

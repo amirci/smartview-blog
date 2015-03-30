@@ -10,7 +10,14 @@
     <div class="page-content">
       <div class="wrapper">
         <div class="inner-wrapper">
-          {{ content }}
+          <div class="row">
+            <div class="col-md-9">
+              {{ content }}
+            </div>
+            <aside class="sidebar col-md-3">
+              {% include_array default_asides %}
+            </aside>
+          </div>
         </div>
 
         <img src="/images/sign-smartview.png" class="smartview-background" />
