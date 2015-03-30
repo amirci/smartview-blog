@@ -1,5 +1,4 @@
 require 'yaml'
-require 'pry'
 
 # This is a Jekyll plugin to import arbitrary variables from a YAML file,
 # and make it available from templates. YAML file name could be defined by
