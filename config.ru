@@ -1,13 +1,10 @@
 require 'bundler/setup'
 require 'sinatra/base'
-require 'rack/ssl-enforcer'
 
 # The project root directory
 $root = ::File.dirname(__FILE__)
 
 class SinatraStaticServer < Sinatra::Base
-
-  use Rack::SslEnforcer, :except_hosts => 'localhost'
 
   if expected_password = ENV['HTTP_AUTH_PASSWORD']
     use Rack::Auth::Basic, "Protected Area" do |_, password|

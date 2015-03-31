@@ -20,5 +20,3 @@ end
 gem "rake"
 
 gem "sinatra"
-
-gem "rack-ssl-enforcer"
