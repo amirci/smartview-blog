@@ -14,13 +14,6 @@
   @media (max-width: $screen-xs-max) {
     position: static;
     margin-bottom: 0px;
-    ul li {
-      height: $navbar-height / 2;
-      a {
-        height: $navbar-height / 2;
-        line-height: $navbar-height / 2;
-      }
-    }
   }
   @include gradient-vertical-three-colors($menu-background-color, lighten($menu-background-color, 5%), 50%, $menu-background-color);
   border: 0px;
@@ -38,12 +31,13 @@
   a:hover { color: $smartview-orange; }
 
   .navbar-toggle {
-    background: white;
+    border: none;
+    margin-top: 20px;
   }
 
   #introduction-menu {
     padding-left: 0px;
-    @media (max-width: $screen-xs-max) {
+    @media (max-width: $screen-sm-max) {
       padding-left: 10px;
     }
   }
@@ -62,19 +56,19 @@
     @extend .hidden-xs;
     float:right;
     margin-top: 20px;
-    a {
+    a#login-button {
       @extend .btn;
       @extend .btn-default;
       // @include button-variant(white, $smartview-orange, $background-start);
-      background-color: inherit;
+      background-color: #353434;
       color: $smartview-orange;
-      border: 0px;
+      border: 1px solid #707070;
       min-width: 100px;
       text-transform: uppercase;
 
       &:active, &.active, &:hover {
         color: $navbar-inverse-link-active-color;
-        background-color: $navbar-inverse-toggle-hover-bg;
+        background-color: $smartview-orange;
         border: 1px solid $navbar-inverse-toggle-border-color;
         border-radius: $border-radius-base;
       }
@@ -97,6 +91,13 @@
   }
 
   @media (max-width: $screen-md-min) {
+    ul li {
+      height: $navbar-height / 2;
+      a {
+        height: $navbar-height / 2;
+        line-height: $navbar-height / 2;
+      }
+    }
     .navbar-header { float: none; }
     .navbar-left, .navbar-right { float: none !important; }
     .navbar-toggle { display: block; }
@@ -115,10 +116,20 @@
     }
     .navbar-nav>li { float: none; }
     .navbar-nav>li>a {
-      padding-top: 10px;
       padding-bottom: 10px;
     }
     .collapse.in { display:block !important; }
+  }
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    .navbar-inner .container {
+      width: auto;
+
+      .navbar-header, .navbar-collapse {
+        margin-left: -$navbar-padding-horizontal;
+        margin-right: -$navbar-padding-horizontal;
+      }
+    }
   }
 }
 
@@ -140,6 +151,26 @@ a.navbar-brand {
 img#logo-smartview {
   height: 40px;
   display: inline;
+}
+
+#appstore-logo {
+  position: relative;
+  text-align: center;
+  float: right;
+  margin-left: 10px;
+
+  a {
+    display:inline-block;
+    overflow:hidden;
+    background:url("https://linkmaker.itunes.apple.com/htmlResources/assets/en_us/images/web/linkmaker/badge_appstore-lrg.png") no-repeat;
+    width:115px;
+    height:34px;
+    background-size: 115px 34px;
+
+    @media only screen {
+      background-image: url("https://linkmaker.itunes.apple.com/htmlResources/assets/en_us/images/web/linkmaker/badge_appstore-lrg.svg");
+    }
+  }
 }
 
 #modal-login {
