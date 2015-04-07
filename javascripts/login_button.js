@@ -1,5 +1,5 @@
 $(function () {
-  $('#login-menu').find('a').tooltipster({
+  $('#login-button').tooltipster({
     theme: 'tooltipster-shadow login-tooltip',
     position: 'bottom-right',
     trigger: 'hover',
