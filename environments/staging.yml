@@ -1,0 +1,4 @@
+smartview:
+  app_site: "http://stage.smartviewapp.com"
+  api_site: "https://smartview-api-staging.herokuapp.com"
+  landing_site: "http://staging-landing-smartview.herokuapp.com"

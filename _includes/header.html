@@ -1,5 +1,5 @@
 <header id="site-header" class="navbar-fixed-top">
-  <div class="navbar navbar-default navbar-fixed-top" id="header-menu">
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse" id="header-menu">
     <div class="navbar-inner">
       <div class="container">
         <div class="navbar-header">
@@ -16,17 +16,63 @@
         </div>
         <div class="navbar-collapse collapse" id="navbar-collapse" style="height: 70px;">
           <ul class="nav navbar-nav">
-            <li><a href="https://smartviewapp.com#features">Features</a></li>
-            <li><a href="https://smartviewapp.com#metrics">Metrics</a></li>
-            <li><a href="https://smartviewapp.com#pricing">Pricing</a></li>
-            <li><a href="https://smartviewapp.com#support">Support</a></li>
-            <li><a href="https://smartviewapp.com#contact">Contact Us</a></li>
+            <li><a href="{{site.smartview.landing_site}}/#features">Features</a></li>
+            <li><a href="{{site.smartview.landing_site}}/#extensibility">Extensibility</a></li>
+            <li><a href="{{site.smartview.landing_site}}/#pricing">Pricing</a></li>
+            <li><a href="{{site.smartview.landing_site}}/#support">Support</a></li>
+            <li><a href="{{site.smartview.landing_site}}/#contact">Contact Us</a></li>
             <li class="active"><a href="{{site.base_url}}/">Blog</a></li>
-            <li id="signup-free-menu"><a href="https://app.smartviewapp.com/users/sign_up">Sign Up <strong>FREE</strong></a></li>
+            <li id="signup-free-menu"><a href="{{site.smartview.app_site}}/users/sign_up">Sign Up <strong>FREE</strong></a></li>
           </ul>
-          <div id="login-menu"><a href="https://app.smartviewapp.com">Log In</a></div>
+          <div id="login-menu">
+            <a id="login-button" href="#">Log In</a>
+            <div id="appstore-logo" class="visible-lg">
+              <a href="https://itunes.apple.com/ca/app/smartview/id809109903?mt=8&  amp;uo=4" target="itunes_store"></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </header>
+
+<!-- Login form -->
+<div class="hide">
+  <div class="modal-sm" id="modal-login">
+    <div class="modal-content">
+      <div class="modal-body">
+        <form class="form-horizontal" id="login_form">
+          <div class="form-group">
+            <label for="input-email">Email</label>
+            <input class="email form-control required" name="email" type="email" autocomplete="off" />
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <input class="password form-control required" name="password" type="password" autocomplete="off" />
+          </div>
+          <div class="row">
+            <div class="col-md-5">
+              <div class="form-group submit-form">
+                <button>Log in</button>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="row">
+                <div class="col-md-12">Or sign in with:</div>
+              </div>
+              <div class="row">
+                <div class="omniauth col-md-12">
+                  <a class="google" href="{{site.smartview.app_site}}/users/auth/google_oauth2"><i class="fa fa-google-plus"></i></a>
+                  <a class="facebook" href="{{site.smartview.app_site}}/users/auth/facebook"><i class="fa fa-facebook"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <a href="{{site.smartview.app_site}}/users/password/new">Forgot password?</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
