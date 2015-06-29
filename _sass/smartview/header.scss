@@ -72,6 +72,11 @@
         border: 1px solid $navbar-inverse-toggle-border-color;
         border-radius: $border-radius-base;
       }
+      &:focus {
+        background-color: #353434;
+        color: $smartview-orange;
+        border: 1px solid #707070;
+      }
     }
   }
 
