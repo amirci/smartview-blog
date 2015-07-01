@@ -72,6 +72,11 @@
         border: 1px solid $navbar-inverse-toggle-border-color;
         border-radius: $border-radius-base;
       }
+      &:focus {
+        background-color: #353434;
+        color: $smartview-orange;
+        border: 1px solid #707070;
+      }
     }
   }
 
@@ -136,16 +141,6 @@
 a.navbar-brand {
   position: relative;
   padding: 5px 30px 5px 10px;
-  .beta {
-      font-size: 0.70em;
-      font-style: italic;
-      position: absolute;
-      left: 144px;
-      bottom: -14px;
-      font-weight: bold;
-      letter-spacing: 1px;
-      top: 15px;
-    }
 }
 
 img#logo-smartview {
