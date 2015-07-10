@@ -67,6 +67,8 @@
     @media(max-width: $screen-md-min) {
       border-right: 0px;
     }
+
+    img { width: 100% }
   }
 
   // Use flex layout for desktop or higher
