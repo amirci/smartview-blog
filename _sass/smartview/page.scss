@@ -45,6 +45,24 @@
     }
   }
 
+  .post {
+    width: 100%;
+    
+    h3 {
+      margin-top: 40px;
+    }
+    
+  }
+
+  .fa {
+    margin: 0 5px;
+  }
+  
+  .fa-stack {
+    margin: 0 5px;
+    .fa { margin: 0;}
+  }
+  
   .post-excerpt {
     border-top: 1px solid $smartview-lightgray;
     padding: $article-padding 0;
