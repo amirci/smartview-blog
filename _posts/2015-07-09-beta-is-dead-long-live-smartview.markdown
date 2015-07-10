@@ -39,7 +39,7 @@ The first solution is to _archive_ the projects that you don't need access to fo
 
 {% img /images/beta_is_over/how_to_archive.png %}
 
-There you can check the _Archive_ box and voila!
+There you can check the _Archive_ box and voilà!
 
 {% img /images/beta_is_over/archived_projects.png %}
 
