@@ -66,6 +66,18 @@
   .post-excerpt {
     border-top: 1px solid $smartview-lightgray;
     padding: $article-padding 0;
+    
+    footer {
+      margin-top: 20px;
+      a {
+        padding: 10px;
+        color: $smartview-orange;
+        border-radius: 5px;
+        background: $smartview-lightgray;
+      }
+    }
+    
+    
   }
 
   .post-list li {
