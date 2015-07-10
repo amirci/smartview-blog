@@ -48,10 +48,22 @@
   .post {
     width: 100%;
     
-    h3 {
+    h3, h2 {
       margin-top: 40px;
     }
     
+    img {
+      background: white;
+      max-width: 80%;
+      display: block;
+      margin-left: auto;
+      margin-right:auto;
+      border: 1px solid $smartview-lightgray;
+      border-radius: 5px;
+      text-align: center;
+      padding: 10px;
+      margin-bottom: 30px;
+    }
   }
 
   .fa {
