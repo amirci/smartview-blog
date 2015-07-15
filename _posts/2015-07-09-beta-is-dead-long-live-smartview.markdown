@@ -7,7 +7,7 @@ categories: [SmartView]
 
 Exciting times! The _Beta_ plan is coming to an end, and now all beta users will have to choose a plan to start the 30-day free trial.
 
-We have been in beta for more than a year and a half, and now that you have to choose a plan, some of you might be thinking that you want a smaller plan but have too many projects to do so.
+We have been in beta for a year and a half, and now that you have to choose a plan, some of you might be thinking that you want a smaller plan but have too many projects to do so.
 
 What to do? Don’t fret! It's really easy and you won't lose any information.
 
@@ -39,7 +39,9 @@ The first solution is to _archive_ the projects that you don't need access to fo
 
 {% img /images/beta_is_over/how_to_archive.png %}
 
-There you can check the _Archive_ box and voilà!
+There you can check the _Archive_ box and voilà! 
+
+The project will appear archived on the project index when you turn on the _Show <i class="fa fa-archive"></i> (archive)_ filter.
 
 {% img /images/beta_is_over/archived_projects.png %}
 
