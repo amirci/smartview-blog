@@ -48,10 +48,22 @@
   .post {
     width: 100%;
     
-    h3 {
+    h3, h2 {
       margin-top: 40px;
     }
     
+    img {
+      background: white;
+      max-width: 80%;
+      display: block;
+      margin-left: auto;
+      margin-right:auto;
+      border: 1px solid $smartview-lightgray;
+      border-radius: 5px;
+      text-align: center;
+      padding: 10px;
+      margin-bottom: 30px;
+    }
   }
 
   .fa {
@@ -66,6 +78,18 @@
   .post-excerpt {
     border-top: 1px solid $smartview-lightgray;
     padding: $article-padding 0;
+    
+    footer {
+      margin-top: 20px;
+      a {
+        padding: 10px;
+        color: $smartview-orange;
+        border-radius: 5px;
+        background: $smartview-lightgray;
+      }
+    }
+    
+    
   }
 
   .post-list li {
