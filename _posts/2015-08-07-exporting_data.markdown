@@ -25,6 +25,8 @@ On the releases screen you can see export buttons on the _In Progress_ and _Comp
 
 The exported file will have a timestamp as part of its name, for example `SmartView-in-progress-20150807144946.csv`.
 
+You can choose to export a single release if you wish to do so. Each release has a <i class="fa fa-download"></i> button to export all the stories for that release.
+
 ### CSV format
 
 The file includes the following information on each column:
@@ -54,14 +56,18 @@ For example, let's imagine the project we are exporting has four labels `Bug`, `
 
 ## Exporting the history
 
-Similar to the releases option, you can export all the stories in the _History_ into a CSV file.
+Similar to the releases option, you can export stories from the _History_ into a CSV file.
 
 {% include _go_to_history.html %}
 
-On the history screen there is a button to export to CSV.
+On the history screen there is a <i class="fa fa-download"></i> button to export to CSV.
 
 {% img /images/sv_history_export.png %}
 
-Pressing the button will export the stories based on the filter you have selected: _weekly_, _monthly_ or _quarterly_.
+Pressing the button will export the stories based on the period you have selected. 
+
+{% img /images/sv_history_monthly_jun.png %}
+
+For example if you choose _Monthly_ and then select the month of _June_, when exporting you will get a file called `stories-archive-history-SmartView-Monthly-Jun 2015.csv` with all the completed stories for that month.
 
 The format is the same as in exporting releases.
