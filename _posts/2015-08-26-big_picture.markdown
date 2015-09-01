@@ -13,11 +13,13 @@ Sometimes you need a higher view, luckily to do that is really easy with _SmartV
 
 ### Comparing releases
 
-When doing a _User Story Map_ on a wall all the releases are ordered from top to bottom making easy to identify on each release the _User Activities_ (Groups) what _User Tasks_ (Subgroups) have been worked on so far, compare and decide what to do for future releases.
+When using a _User Story Map_ on a wall the releases are ordered from top to bottom making easy to identify which _User Activities_ (Groups) and _User Tasks_ (Subgroups) have been worked on so far and which stories are planned for the future releases.
 
-The _User Story Map_ in _SmartView_ is meant to make really easy working on one release at a time concentrating on the stories on each _Group_.
+The _User Story Map_ in _SmartView_ is meant to make really easy working with one release at a time focusing on the stories for the selected _Group_.
 
-To see all the releases together you can use the _Big Picture_ view. 
+But in many situations, looking at all the releases together can help you compare which Subgroups (User Taks, Epics) have been really busy and which have not.
+
+The _Big Picture_ view lets you compare all the releases together and move stories between releases making planning and reordering features a breeze.
 
 {% include _go_to_big_picture.html %}
 
