@@ -17,7 +17,7 @@ When using a _User Story Map_ on a wall the releases are ordered from top to bot
 
 The _User Story Map_ in _SmartView_ is meant to make really easy working with one release at a time focusing on the stories for the selected _Group_.
 
-But in many situations, looking at all the releases together can help you compare which Subgroups (User Taks, Epics) have been really busy and which have not.
+But in many situations, looking at all the releases together can help you compare which Subgroups (User Tasks, Epics) have been really busy and which have not.
 
 The _Big Picture_ view lets you compare all the releases together and move stories between releases making planning and reordering features a breeze.
 
@@ -25,7 +25,7 @@ The _Big Picture_ view lets you compare all the releases together and move stori
 
 ### At a glimpse
 
-When opening _Big Picture_ you will see a grid with releases on the left and Groups and Subgroups on the top.
+When opening _Big Picture_ you will see a grid with releases on the left and Groups and Subgroups at the top.
 
 {% img /images/sv_big_picture.png %}
 
@@ -35,13 +35,13 @@ If you scroll up (and have some complete releases) you will see them in green.
 
 {% img /images/sv_big_picture_done_releases.png %}
 
-The last release at the bottom is the _ICE BOX_ in blue showing all the stories cooling down until you decide where to plan them.
+The last release at the bottom (in blue) is the _ICE BOX_ showing all the stories cooling down until you decide when to plan for them.
 
 ### Story zoom
 
-In the _Big Picture_ the _User Stories_ look small in order to be able to show several groups and releases at the same time.
+In the _Big Picture_ the _User Stories_ look small to be able to show several groups and releases at the same time.
 
-If you wish to see a particular story, just hover that story and you will see a small popup showing you a zoomed in version.
+If you wish to see a particular story, just _hover_ that story and you will see a small popup showing you a zoomed in version.
 
 {% img /images/sv_big_picture_zoom_story.png %}
 
